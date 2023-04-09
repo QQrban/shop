@@ -2,6 +2,8 @@
 @import '@fontsource/roboto/400.css';
 @import '@fontsource/roboto/500.css';
 @import '@fontsource/roboto/700.css';
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 body, html {
     font-family: 'Roboto';
@@ -41,4 +43,39 @@ img {
 
 .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
     color: white !important;
+}
+
+.MuiTabs-indicator {
+    background-color: #ffa500 !important;
+}
+
+.make-orange {
+    background-color: orange;
+}
+.like-btn {
+    color: orange;
+}
+.make-white {
+    color: white;
+}
+
+@media (max-width: 698px) {
+    .main-poster {
+        flex-direction: column !important;
+        h2 {
+            font-size: 34px;
+        }
+        img {
+            max-width: 300px !important;
+        }
+        button {
+            max-width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 378px) {
+    .hot-category-subtl {
+        font-size: 18px;
+    }
 }
