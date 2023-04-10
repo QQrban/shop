@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useSelector } from 'react-redux';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,6 +10,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { Container } from '@mui/material';
 import ChooseLang from './ChooseLang';
@@ -18,7 +20,7 @@ export default function Header() {
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
+    const { items } = useSelector(state => state.cart)
 
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);
@@ -68,6 +70,18 @@ export default function Header() {
                 </IconButton>
                 <p>Profile</p>
             </MenuItem>
+            <MenuItem>
+                <IconButton
+                    size="large"
+                    aria-label="account of current user"
+                    aria-controls="primary-search-account-menu"
+                    aria-haspopup="true"
+                    color="inherit"
+                >
+                    <FavoriteBorderIcon />
+                </IconButton>
+                <p>Wishes</p>
+            </MenuItem>
         </Menu>
     );
 
@@ -107,8 +121,18 @@ export default function Header() {
                         <Box sx={{ flexGrow: 1 }} />
 
                         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+                            <IconButton
+                                size="large"
+                                edge="end"
+                                aria-label="account of current user"
+                                aria-controls={menuId}
+                                aria-haspopup="true"
+                                color="inherit"
+                            >
+                                <FavoriteBorderIcon fontSize='inherit' />
+                            </IconButton>
                             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-                                <Badge badgeContent={4} color="error">
+                                <Badge badgeContent={items.length} color="error">
                                     <ShoppingBasketIcon fontSize='inherit' />
                                 </Badge>
                             </IconButton>
@@ -122,6 +146,7 @@ export default function Header() {
                             >
                                 <AccountCircle fontSize='inherit' />
                             </IconButton>
+
                         </Box>
 
                         <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
@@ -136,6 +161,7 @@ export default function Header() {
                                 <MoreIcon />
                             </IconButton>
                         </Box>
+
                     </Toolbar>
                 </Container>
             </AppBar>

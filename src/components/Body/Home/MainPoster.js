@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import img from "../../img1.png"
+import img from "../../../img1.png"
 
 const MainPoster = () => {
     return (
