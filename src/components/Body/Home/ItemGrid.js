@@ -2,11 +2,13 @@ import { useDispatch } from 'react-redux';
 import { Box, Typography, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import { getPopular } from '../../../services/apiService';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { addProduct } from '../../../services/stateService';
+import { setCart } from '../../../services/stateService';
 
-const ItemGrid = () => {
+
+const ItemGrid = ({ item }) => {
+
+    const dispatch = useDispatch()
 
     const onClickAdd = (item) => {
         const obj = {
@@ -15,18 +17,24 @@ const ItemGrid = () => {
             img: item.img,
             price: item.price,
         };
-        dispatch(addProduct(obj));
+        dispatch(setCart(obj));
+    };
+
+    const like = (e) => {
+        e.target.classList.toggle('make-orange');
+        e.target.children[0].classList.toggle('make-white');
     };
 
 
     return (
-        <Grid key={item.id} item>
+        <Grid item>
             <Paper
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
                     width: 220,
+                    height: 250,
                     borderRadius: '14px',
                     p: '5px 10px',
                 }}
@@ -40,7 +48,7 @@ const ItemGrid = () => {
                     }}
                 >
                     <img
-                        style={{ maxWidth: '100px' }}
+                        style={{ width: '100px', height: '100px' }}
                         src={item.img}
                         alt="electr"
                     />

@@ -2,13 +2,13 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import img from "../../../img1.png"
+import img from "../../../img2.png"
 
-const MainPoster = () => {
+const SecondaryPoster = () => {
     return (
         <Box
             sx={{
-                mt: '140px',
+                mt: '90px',
                 display: 'flex',
                 flexWrap: 'wrap',
                 '& > :not(style)': {
@@ -26,6 +26,7 @@ const MainPoster = () => {
                 borderRadius: '10px',
                 gap: '40px'
             }} elevation={3}>
+                <img style={{ maxWidth: '350px' }} src={img} alt="" />
                 <Box sx={{
                     maxWidth: '490px',
                     display: 'flex',
@@ -39,33 +40,29 @@ const MainPoster = () => {
                             fontWeight: 'bold'
                         }}
                     >
-                        Online store with products from
-                        <span style={{ color: 'orange' }}> Apple</span> to Xiaomi</Typography>
+                        We will exchange your
+                        <span style={{ color: 'orange' }}> laptop</span> on trade in</Typography>
                     <Typography
                         variant='p'
                         sx={{
                             fontSize: '17px',
                             lineHeight: '24px'
                         }}>
-                        Visit us today and discover the best deals on electronic appliances in town!
+                        We will exchange your equipment for a new one under the trade-in program
                     </Typography>
                     <Button
                         className='shop-now'
                         sx={{
                             maxWidth: '150px',
-                            bgcolor: '#1976d2',
-                            ':hover': {
-                                backgroundColor: 'orange'
-                            }
+                            bgcolor: 'orange',
                         }}
                         variant="contained">
-                        Shop now
+                        Learn more
                     </Button>
                 </Box>
-                <img style={{ maxWidth: '320px' }} src={img} alt="" />
             </Paper>
         </Box>
     )
 }
 
-export default MainPoster
+export default SecondaryPoster

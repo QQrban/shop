@@ -20,7 +20,7 @@ export default function Header() {
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-    const { items } = useSelector(state => state.cart)
+    const cart = useSelector(state => state.cart)
 
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);
@@ -52,11 +52,11 @@ export default function Header() {
         >
             <MenuItem>
                 <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-                    <Badge badgeContent={4} color="error">
+                    <Badge badgeContent={cart.length} color="error">
                         <ShoppingBasketIcon />
                     </Badge>
                 </IconButton>
-                <p>Messages</p>
+                <p>Cart</p>
             </MenuItem>
             <MenuItem>
                 <IconButton
@@ -86,8 +86,8 @@ export default function Header() {
     );
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" sx={{ padding: '6px 0' }}>
+        <Box position='fixed' sx={{ flexGrow: 1, width: '100%', zIndex: '55' }}>
+            <AppBar position="static" >
                 <Container>
                     <Toolbar sx={{ cursor: 'pointer' }}>
                         <a href="/">
@@ -132,7 +132,7 @@ export default function Header() {
                                 <FavoriteBorderIcon fontSize='inherit' />
                             </IconButton>
                             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-                                <Badge badgeContent={items.length} color="error">
+                                <Badge badgeContent={cart.length} color="error">
                                     <ShoppingBasketIcon fontSize='inherit' />
                                 </Badge>
                             </IconButton>

@@ -41,7 +41,7 @@ const HotCategories = () => {
 
 
     return (
-        <Box sx={{ mt: '100px' }}>
+        <Box sx={{ mt: '80px' }}>
             <Box sx={{
                 display: 'flex',
                 justifyContent: 'space-between',

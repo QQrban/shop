@@ -1,0 +1,56 @@
+[
+  {
+    "top_products": [
+      {
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/337865-502645-medium.png",
+        "name": "Samsung AU7092, 65'', Ultra HD",
+        "price": "700",
+        "id": "1"
+      },
+      {
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/271966-412955-medium.png",
+        "name": "Apple MacBook Air 13 (2020), M1 8C/7C, 8 GB, 256 GB",
+        "price": "1050",
+        "id": "2"
+      },
+      {
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/316024-475945-medium.png",
+        "name": "Samsung Galaxy A53 5G, 128 GB, black",
+        "price": "700",
+        "id": "3"
+      },
+      {
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/332022-499140-medium.png",
+        "name": "JBL Vibe 200TWS, black",
+        "price": "70",
+        "id": "4"
+      }
+    ],
+    "new_products": [
+      {
+        "img": "https://ee2.pigugroup.eu/colours/158/682/09/15868209/msi-katana-gf66-11ud-1011xpl5m2w11p-156-i7-940b1-hind_large.jpg",
+        "name": "MSI Katana GF66, 15.6",
+        "price": "1150",
+        "id": "5"
+      },
+      {
+        "img": "https://ee2.pigugroup.eu/colours/115/834/26/11583426/asus-rog-phone-6-ai2201-1a013eu-dual-ca149-hind_large.jpg",
+        "name": "ASUS ROG Phone 6 AI2201-1A013EU Dual SIM",
+        "price": "950",
+        "id": "6"
+      },
+      {
+        "img": "https://ee2.pigugroup.eu/colours/150/021/64/15002164/samsung-galaxy-s23-ultra-5g-8256gb-light-6638b-hind_large.jpg",
+        "name": "Samsung Galaxy S23 Ultra 5G 8/256GB",
+        "price": "1280",
+        "id": "7"
+      },
+      {
+        "img": "https://ee2.pigugroup.eu/colours/107/668/80/10766880/50-4k-uhd-led-google-tv-sony-121d7-hind_large.jpg",
+        "name": "50 4K UHD LED Google TV Sony KD50X81KAEP",
+        "price": "400",
+        "id": "8"
+      }
+    ]
+  }
+]
