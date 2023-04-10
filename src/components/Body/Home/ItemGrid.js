@@ -69,8 +69,15 @@ const ItemGrid = ({ item }) => {
                             alignItems: 'center',
                         }}
                     >
-                        <Typography sx={{ fontWeight: 500, fontSize: '19px' }}>
+                        <Typography sx={{ fontWeight: 500, fontSize: '19px', position: 'relative' }}>
                             ${item.price}
+                            <Typography sx={{
+                                position: 'absolute',
+                                top: '-15px',
+                                color: 'orange',
+                                textDecoration: 'line-through',
+                                fontSize: '14px'
+                            }} component='span'>{item.discount}</Typography>
                         </Typography>
                         <Box
                             sx={{

@@ -8,6 +8,7 @@ import NewGoods from './NewGoods';
 import { getAllProducts } from '../../../services/apiService';
 import { setProducts } from '../../../services/stateService';
 import SecondaryPoster from './SecondaryPoster';
+import SuperSale from './SuperSale';
 
 const HomeBody = () => {
 
@@ -27,6 +28,7 @@ const HomeBody = () => {
                 <PopularGoods />
                 <NewGoods />
                 <SecondaryPoster />
+                <SuperSale />
             </Container>
         </main>
     )

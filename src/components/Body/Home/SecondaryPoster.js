@@ -24,7 +24,7 @@ const SecondaryPoster = () => {
                 padding: '20px 30px',
                 justifyContent: 'space-around',
                 borderRadius: '10px',
-                gap: '40px'
+                gap: '40px',
             }} elevation={3}>
                 <img style={{ maxWidth: '350px' }} src={img} alt="" />
                 <Box sx={{

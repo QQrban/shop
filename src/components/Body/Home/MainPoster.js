@@ -24,7 +24,8 @@ const MainPoster = () => {
                 padding: '20px 30px',
                 justifyContent: 'space-around',
                 borderRadius: '10px',
-                gap: '40px'
+                gap: '40px',
+                bgcolor: '#ffa6004b'
             }} elevation={3}>
                 <Box sx={{
                     maxWidth: '490px',
@@ -40,7 +41,7 @@ const MainPoster = () => {
                         }}
                     >
                         Online store with products from
-                        <span style={{ color: 'orange' }}> Apple</span> to Xiaomi</Typography>
+                        <span style={{ color: '#1976d2' }}> Apple</span> to Xiaomi</Typography>
                     <Typography
                         variant='p'
                         sx={{

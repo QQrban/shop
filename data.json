@@ -51,6 +51,36 @@
         "price": "400",
         "id": "8"
       }
+    ],
+    "discount": [
+      {
+        "img": "https://thumbor.arvutitark.ee/l2D7VgAVIBDVu8UuRxOfMJGInQY=/trim/fit-in/800x800/filters:format(webp)/https%3A%2F%2Fstorage.googleapis.com%2Farvutitark-prod%2Fpublic%2Fmedia-hub-cms%2F2023%2F04%2F375857%2FZero-Ultra_black_BackFront.png",
+        "name": "INFINIX Zero Ultra 8/256GB",
+        "price": "599",
+        "discount": "850",
+        "id": "9"
+      },
+      {
+        "img": "https://thumbor.arvutitark.ee/fALBv6nnNM1P2HLdqAtCLhMiOJ4=/trim/fit-in/800x800/filters:format(webp)/https%3A%2F%2Fstorage.googleapis.com%2Farvutitark-prod%2Fpublic%2Fmedia-hub-olev%2F2022%2F10%2F210129%2Forigina.jpg",
+        "name": "Xiaomi Smart Band 7 Pro, black",
+        "price": "65",
+        "discount": "85",
+        "id": "10"
+      },
+      {
+        "img": "https://thumbor.arvutitark.ee/POw8cmhSpHRjPCdK7GDSigwcgSc=/trim/fit-in/800x800/filters:format(webp)/https%3A%2F%2Fstorage.googleapis.com%2Farvutitark-prod%2Fpublic%2Fmedia-hub-olev%2F2021%2F03%2F21709%2Fmedia-cfciig.jpg",
+        "name": "POCKETBOOK InkPad 3 Pro 7.8",
+        "price": "260",
+        "discount": "180",
+        "id": "11"
+      },
+      {
+        "img": "https://thumbor.arvutitark.ee/oWrv91DmXlkGVRlC4Wzj1dIAH1U=/trim/fit-in/800x800/filters:format(webp)/https%3A%2F%2Fstorage.googleapis.com%2Farvutitark-prod%2Fpublic%2Fmedia-hub-olev%2F2023%2F02%2F355745%2Foriginal.jpg",
+        "name": "Lenovo Tab P11 (2nd Gen) 11.5 LTE",
+        "price": "300",
+        "discount": "350",
+        "id": "12"
+      }
     ]
   }
 ]

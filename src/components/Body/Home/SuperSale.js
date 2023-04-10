@@ -5,17 +5,17 @@ import Grid from '@mui/material/Grid';
 import TopTitle from './TopTitle';
 import ItemGrid from './ItemGrid';
 
-const PopularGoods = () => {
+const SuperSale = () => {
     const products = useSelector(state => state.products);
 
     return (
         <Box sx={{ mt: '80px' }}>
-            <TopTitle name={'Popular Goods'} />
+            <TopTitle name={'Super Sale'} />
             <Grid sx={{ flexGrow: 1, mt: '50px' }} container>
                 <Grid item xs={12}>
                     <Grid container justifyContent="center" spacing={10}>
                         {products?.length ? (
-                            products[0].top_products.map((item) => (
+                            products[0].discount.map((item) => (
                                 <ItemGrid key={item.id} item={item} />
                             ))
                         ) : (
@@ -28,4 +28,4 @@ const PopularGoods = () => {
     );
 };
 
-export default PopularGoods;
+export default SuperSale;

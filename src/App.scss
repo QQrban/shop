@@ -31,7 +31,25 @@ img {
 }
 
 body {
-    background-color: #1976d209;
+    background-color: #1976d211;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #c7ced4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a7afb4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1976d2b9;
 }
 
 .MuiSelect-select {
