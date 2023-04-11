@@ -22,7 +22,7 @@ const HomeBody = () => {
     }, [dispatch]);
 
     return (
-        <main style={{ paddingTop: '50px' }}>
+        <main>
             <Container>
                 <MainPoster />
                 <HotCategories />

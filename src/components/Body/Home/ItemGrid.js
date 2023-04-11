@@ -1,14 +1,15 @@
-import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Box, Typography, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { setCart } from '../../../services/stateService';
-
+import { setCart, setTotalPrice } from '../../../services/stateService';
 
 const ItemGrid = ({ item }) => {
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+    const cart = useSelector(state => state.cart);
 
     const onClickAdd = (item) => {
         const obj = {
@@ -18,7 +19,12 @@ const ItemGrid = ({ item }) => {
             price: item.price,
         };
         dispatch(setCart(obj));
+        dispatch(setTotalPrice(+obj.price))
     };
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }, [cart])
 
     const like = (e) => {
         e.target.classList.toggle('make-orange');

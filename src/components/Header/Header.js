@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { useSelector } from 'react-redux';
+import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -15,12 +15,15 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import { Container } from '@mui/material';
 import ChooseLang from './ChooseLang';
 import Burger from './Burger';
+import { setOpenCart } from '../../services/stateService';
 
 export default function Header() {
-    const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+    const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
 
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-    const cart = useSelector(state => state.cart)
+
+    const cart = useSelector(state => state.cart);
+    const dispatch = useDispatch();
 
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);
@@ -50,7 +53,7 @@ export default function Header() {
             open={isMobileMenuOpen}
             onClose={handleMobileMenuClose}
         >
-            <MenuItem>
+            <MenuItem onClick={() => dispatch(setOpenCart(true))}>
                 <IconButton size="large" aria-label="show 4 new mails" color="inherit">
                     <Badge badgeContent={cart.length} color="error">
                         <ShoppingBasketIcon />
@@ -131,7 +134,7 @@ export default function Header() {
                             >
                                 <FavoriteBorderIcon fontSize='inherit' />
                             </IconButton>
-                            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+                            <IconButton onClick={() => dispatch(setOpenCart(true))} size="large" aria-label="show 4 new mails" color="inherit">
                                 <Badge badgeContent={cart.length} color="error">
                                     <ShoppingBasketIcon fontSize='inherit' />
                                 </Badge>

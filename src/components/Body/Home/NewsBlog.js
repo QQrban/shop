@@ -7,11 +7,11 @@ const NewsBlog = () => {
     console.log(products);
 
     return (
-        <Box sx={{ mt: '80px' }}>
+        <Box sx={{ mt: '60px' }}>
             <TopTitle name={'News and Blog'} />
             <Grid sx={{ flexGrow: 1, mt: '50px' }} container>
                 <Grid item xs={12}>
-                    <Grid container justifyContent="center" spacing={10}>
+                    <Grid container justifyContent="center" spacing={{ xl: 10, sm: 5, xs: 2 }}>
                         {products?.length ? (
                             products[0].news.slice(0, 4).map((item) => (
                                 <Grid key={item.id} item>

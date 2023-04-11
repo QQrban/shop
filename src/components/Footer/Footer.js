@@ -21,13 +21,16 @@ const Footer = () => {
             }} >
                 <Box sx={{
                     display: 'flex',
-                    justifyContent: { xs: 'center', md: 'space-between' },
-                    flexWrap: 'wrap',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    flexDirection: { sm: 'row', xs: 'column' },
                     gap: '40px',
                     pb: '20px',
                     borderBottom: '1px solid gray'
                 }}>
-                    <Box>
+                    <Box sx={{
+                        textAlign: { sm: 'left', xs: 'center' }
+                    }}>
                         <Typography
                             variant="h4"
                             component='h4'
@@ -41,6 +44,7 @@ const Footer = () => {
                         <Box sx={{
                             mt: '9px',
                             display: 'flex',
+                            justifyContent: { sm: 'flex-start', xs: 'center' },
                             gap: '14px'
                         }}>
                             <TwitterIcon />
@@ -48,32 +52,37 @@ const Footer = () => {
                             <InstagramIcon />
                         </Box>
                     </Box>
-                    <Box>
-                        <Typography
-                            variant="h5"
-                            component='ul'
-                        >
-                            Products
-                        </Typography>
-                        <Box sx={styles}>
-                            <Typography sx={{ fontSize: '16px' }} component='li'>Super Sale</Typography>
-                            <Typography sx={{ fontSize: '16px' }} component='li'>Categories</Typography>
-                            <Typography sx={{ fontSize: '16px' }} component='li'>Popular</Typography>
-                            <Typography sx={{ fontSize: '16px' }} component='li'>New Goods</Typography>
+                    <Box sx={{
+                        display: 'flex',
+                        gap: { md: '205px', sm: '125px', xs: '55px' }
+                    }}>
+                        <Box>
+                            <Typography
+                                variant="h5"
+                                component='ul'
+                            >
+                                Products
+                            </Typography>
+                            <Box sx={styles}>
+                                <Typography sx={{ fontSize: '16px' }} component='li'>Super Sale</Typography>
+                                <Typography sx={{ fontSize: '16px' }} component='li'>Categories</Typography>
+                                <Typography sx={{ fontSize: '16px' }} component='li'>Popular</Typography>
+                                <Typography sx={{ fontSize: '16px' }} component='li'>New Goods</Typography>
+                            </Box>
                         </Box>
-                    </Box>
-                    <Box>
-                        <Typography
-                            variant="h5"
-                            component='ul'
-                        >
-                            Marketplace
-                        </Typography>
-                        <Box sx={styles}>
-                            <Typography sx={{ fontSize: '16px' }} component='li'>About Us</Typography>
-                            <Typography sx={{ fontSize: '16px' }} component='li'>Contacts</Typography>
-                            <Typography sx={{ fontSize: '16px' }} component='li'>News and blog</Typography>
-                            <Typography sx={{ fontSize: '16px' }} component='li'>Partners</Typography>
+                        <Box>
+                            <Typography
+                                variant="h5"
+                                component='ul'
+                            >
+                                Marketplace
+                            </Typography>
+                            <Box sx={styles}>
+                                <Typography sx={{ fontSize: '16px' }} component='li'>About Us</Typography>
+                                <Typography sx={{ fontSize: '16px' }} component='li'>Contacts</Typography>
+                                <Typography sx={{ fontSize: '16px' }} component='li'>News and blog</Typography>
+                                <Typography sx={{ fontSize: '16px' }} component='li'>Partners</Typography>
+                            </Box>
                         </Box>
                     </Box>
                 </Box>
@@ -83,7 +92,12 @@ const Footer = () => {
                 }}>
                     <Subscribe />
                 </Box>
-
+                <Box sx={{
+                    mt: '20px',
+                    fontSize: '15px'
+                }}>
+                    © 2023 All rights reserved.
+                </Box>
             </Container>
         </footer >
     )
