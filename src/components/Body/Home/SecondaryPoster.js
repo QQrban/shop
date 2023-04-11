@@ -25,6 +25,7 @@ const SecondaryPoster = () => {
                 justifyContent: 'space-around',
                 borderRadius: '10px',
                 gap: '40px',
+                bgcolor: '#1976d224'
             }} elevation={3}>
                 <img style={{ maxWidth: '350px' }} src={img} alt="" />
                 <Box sx={{

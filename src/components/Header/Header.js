@@ -89,7 +89,7 @@ export default function Header() {
         <Box position='fixed' sx={{ flexGrow: 1, width: '100%', zIndex: '55' }}>
             <AppBar position="static" >
                 <Container>
-                    <Toolbar sx={{ cursor: 'pointer' }}>
+                    <Toolbar >
                         <a href="/">
                             <Typography
                                 variant="h4"

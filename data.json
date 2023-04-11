@@ -29,7 +29,7 @@
     "new_products": [
       {
         "img": "https://ee2.pigugroup.eu/colours/158/682/09/15868209/msi-katana-gf66-11ud-1011xpl5m2w11p-156-i7-940b1-hind_large.jpg",
-        "name": "MSI Katana GF66, 15.6",
+        "name": "MSI Katana GF66, 15.6, SSD 1TB, Windows 11",
         "price": "1150",
         "id": "5"
       },
@@ -54,32 +54,90 @@
     ],
     "discount": [
       {
-        "img": "https://thumbor.arvutitark.ee/l2D7VgAVIBDVu8UuRxOfMJGInQY=/trim/fit-in/800x800/filters:format(webp)/https%3A%2F%2Fstorage.googleapis.com%2Farvutitark-prod%2Fpublic%2Fmedia-hub-cms%2F2023%2F04%2F375857%2FZero-Ultra_black_BackFront.png",
-        "name": "INFINIX Zero Ultra 8/256GB",
-        "price": "599",
-        "discount": "850",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/325829-490317-medium.png",
+        "name": "Samsung Galaxy Flip4, 512 GB, graphite - Smartphone",
+        "price": "1050",
+        "discount": "$1120",
         "id": "9"
       },
       {
-        "img": "https://thumbor.arvutitark.ee/fALBv6nnNM1P2HLdqAtCLhMiOJ4=/trim/fit-in/800x800/filters:format(webp)/https%3A%2F%2Fstorage.googleapis.com%2Farvutitark-prod%2Fpublic%2Fmedia-hub-olev%2F2022%2F10%2F210129%2Forigina.jpg",
-        "name": "Xiaomi Smart Band 7 Pro, black",
-        "price": "65",
-        "discount": "85",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/345487-519307-medium.png",
+        "name": "Apple iPhone 14, 512 GB, yellow - Smartphone",
+        "price": "1200",
+        "discount": "$1450",
         "id": "10"
       },
       {
-        "img": "https://thumbor.arvutitark.ee/POw8cmhSpHRjPCdK7GDSigwcgSc=/trim/fit-in/800x800/filters:format(webp)/https%3A%2F%2Fstorage.googleapis.com%2Farvutitark-prod%2Fpublic%2Fmedia-hub-olev%2F2021%2F03%2F21709%2Fmedia-cfciig.jpg",
-        "name": "POCKETBOOK InkPad 3 Pro 7.8",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/337542-469360-medium.png",
+        "name": "MSI GF63 Thin 11UD, 15.6, i5, 8 GB, 512 GB",
         "price": "260",
-        "discount": "180",
+        "discount": "$180",
         "id": "11"
       },
       {
-        "img": "https://thumbor.arvutitark.ee/oWrv91DmXlkGVRlC4Wzj1dIAH1U=/trim/fit-in/800x800/filters:format(webp)/https%3A%2F%2Fstorage.googleapis.com%2Farvutitark-prod%2Fpublic%2Fmedia-hub-olev%2F2023%2F02%2F355745%2Foriginal.jpg",
-        "name": "Lenovo Tab P11 (2nd Gen) 11.5 LTE",
-        "price": "300",
-        "discount": "350",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/218647-111-medium.png",
+        "name": "Apple AirPods 2 - True-Wireless Earbuds",
+        "price": "110",
+        "discount": "$160",
         "id": "12"
+      }
+    ],
+    "news": [
+      {
+        "title": "New Smartphone Model XYZ-5000 Released with Advanced Features",
+        "author": "TechGuru123",
+        "date": "2023-03-16",
+        "description": "The latest smartphone model XYZ-5000 has been released by a leading tech company. It comes with advanced features such as a triple-lens camera, 5G connectivity, and improved battery life.",
+        "img": "https://images.unsplash.com/photo-1494366222322-387658a1a976?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNtYXJ0cGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "id": "991"
+      },
+      {
+        "title": "Smart Home Devices Becoming More Popular Among Homeowners",
+        "author": "HomeTechExpert",
+        "date": "2023-03-15",
+        "description": "The demand for smart home devices is on the rise, with homeowners opting for smart thermostats, smart security systems, and other connected appliances to enhance their home automation and convenience.",
+        "img": "https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c21hcnQlMjBob21lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "id": "992"
+      },
+      {
+        "title": "New Gaming Console XYZ-PlayStation 6 Set to Launch Next Month",
+        "author": "GamingGeek89",
+        "date": "2023-03-14",
+        "description": "Gaming enthusiasts are eagerly anticipating the launch of the next-generation gaming console XYZ-PlayStation 6, which promises improved graphics, faster performance, and a vast library of games.",
+        "img": "https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29uc29sZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "id": "993"
+      },
+      {
+        "title": "Latest Smart TV Model ABC-55UHD Receives Rave Reviews for its Picture Quality",
+        "author": "TVTechReviewer",
+        "date": "2023-03-13",
+        "description": "The newly released smart TV model ABC-55UHD has been praised for its stunning picture quality, high resolution, and smart features, making it a top choice among TV enthusiasts.",
+        "img": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c21hcnQlMjB0dnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "id": "994"
+      },
+      {
+        "title": "New Wireless Earbuds XYZ-Earbuds Pro Launched with Noise-Cancellation Feature",
+        "author": "AudioTechEnthusiast",
+        "date": "2023-03-12",
+        "description": "The latest wireless earbuds model XYZ-Earbuds Pro has been launched, featuring active noise-cancellation technology, long battery life, and superior sound quality for an immersive listening experience.",
+        "img": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWFyYnVkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "id": "995"
+      },
+      {
+        "title": "Robot Vacuum Cleaners Gain Popularity for Hassle-Free Cleaning",
+        "author": "HomeCleaningHacks",
+        "date": "2023-03-11",
+        "description": "Robot vacuum cleaners are becoming increasingly popular among busy households for their convenience and efficiency in keeping homes clean with minimal effort. The latest models offer advanced features like smart mapping and voice control.",
+        "img": "https://images.unsplash.com/photo-1558317374-067fb5f30001?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmFjdXVtJTIwY2xlYW5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "id": "996"
+      },
+      {
+        "title": "New Wearable Fitness Tracker ABC-Fit Released with Health Monitoring Features",
+        "author": "FitnessTechEnthusiast",
+        "date": "2023-03-10",
+        "description": "The latest wearable fitness tracker model ABC-Fit has hit the market, boasting health monitoring features such as heart rate monitoring, sleep tracking, and activity tracking to help users achieve their fitness goals.",
+        "img": "https://images.unsplash.com/photo-1557935728-e6d1eaabe558?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZpdG5lc3MlMjB0cmFja2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "id": "997"
       }
     ]
   }

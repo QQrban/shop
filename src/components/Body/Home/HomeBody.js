@@ -9,6 +9,7 @@ import { getAllProducts } from '../../../services/apiService';
 import { setProducts } from '../../../services/stateService';
 import SecondaryPoster from './SecondaryPoster';
 import SuperSale from './SuperSale';
+import NewsBlog from './NewsBlog';
 
 const HomeBody = () => {
 
@@ -29,6 +30,7 @@ const HomeBody = () => {
                 <NewGoods />
                 <SecondaryPoster />
                 <SuperSale />
+                <NewsBlog />
             </Container>
         </main>
     )

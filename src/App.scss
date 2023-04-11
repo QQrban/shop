@@ -19,6 +19,9 @@ body, html {
 ul {
     list-style: none;
 }
+li {
+    list-style-type: none;
+}
 
 a {
     color: inherit;
@@ -28,10 +31,19 @@ a {
 img {
     max-width: 100%;
     display: block;
+
 }
 
 body {
     background-color: #1976d211;
+}
+
+footer {
+    box-shadow: 1px 0 4px rgb(145, 145, 145);
+    margin-top: 50px;
+    padding: 40px 0;
+    background-color: rgb(80, 79, 77);
+    color: white;
 }
 
 ::-webkit-scrollbar {
