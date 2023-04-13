@@ -21,8 +21,7 @@ export default function Header() {
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
 
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-    const cart = useSelector(state => state.cart);
+    const cart = useSelector(state => state.cart.cart);
     const dispatch = useDispatch();
 
     const handleMobileMenuClose = () => {

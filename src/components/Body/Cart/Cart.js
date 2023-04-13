@@ -1,7 +1,9 @@
+import { useEffect } from 'react';
 import { Drawer, Box, Typography, Container, Grid, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { useSelector, useDispatch } from 'react-redux';
 import { setOpenCart } from '../../../services/stateService';
+import { plusItem, minusItem, removeItem, calculateTotals } from '../../../services/cartSlice';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -24,9 +26,13 @@ const styleIcon = {
 
 const Cart = () => {
     const dispatch = useDispatch();
-    const openCart = useSelector(state => state.openCart);
-    const totalPrice = useSelector(state => state.totalPrice);
-    const cart = useSelector(state => state.cart)
+    const openCart = useSelector(state => state.products.openCart);
+    const totalPrice = useSelector(state => state.cart.totalPrice);
+    const cart = useSelector(state => state.cart.cart);
+
+    useEffect(() => {
+        dispatch(calculateTotals(cart))
+    }, [cart, dispatch])
 
     return (
         <Drawer anchor='bottom' open={openCart} onClose={() => dispatch(setOpenCart(false))}>
@@ -87,14 +93,14 @@ const Cart = () => {
                                                 alignItems: 'center',
                                                 gap: '4px',
                                             }}>
-                                                <RemoveIcon sx={styleIcon} />
+                                                <RemoveIcon sx={styleIcon} onClick={() => dispatch(minusItem(item))} />
                                                 <Typography sx={{ fontWeight: 500, fontSize: 21, width: 30 }} color='primary' component='p'>{item.count}</Typography>
-                                                <AddIcon sx={styleIcon} />
+                                                <AddIcon sx={styleIcon} onClick={() => dispatch(plusItem(item))} />
                                             </Box>
                                             <Box>
                                                 <Typography sx={{ fontWeight: 500, color: 'black', fontSize: 21 }} component='p'>$ {item.price * item.count}</Typography>
                                             </Box>
-                                            <DeleteIcon sx={{ cursor: 'pointer', fontSize: 35 }} />
+                                            <DeleteIcon sx={{ cursor: 'pointer', fontSize: 35 }} onClick={() => dispatch(removeItem(item))} />
                                         </Box>
                                     </Item>
 

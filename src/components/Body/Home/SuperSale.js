@@ -6,7 +6,7 @@ import TopTitle from './TopTitle';
 import ItemGrid from './ItemGrid';
 
 const SuperSale = () => {
-    const products = useSelector(state => state.products);
+    const products = useSelector(state => state.products.products);
 
     return (
         <Box sx={{ mt: '80px' }}>

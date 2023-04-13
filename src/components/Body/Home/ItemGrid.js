@@ -4,12 +4,14 @@ import { Box, Typography, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { setCart, setTotalPrice } from '../../../services/stateService';
+import { addItem } from '../../../services/cartSlice';
+// import { setCart, setTotalPrice } from '../../../services/stateService';
 
 const ItemGrid = ({ item }) => {
 
     const dispatch = useDispatch();
-    const cart = useSelector(state => state.cart);
+    const cart = useSelector(state => state.cart.cart);
+    const price = useSelector(state => state.cart.totalPrice)
 
     const onClickAdd = (item) => {
         const obj = {
@@ -18,13 +20,14 @@ const ItemGrid = ({ item }) => {
             img: item.img,
             price: item.price,
         };
-        dispatch(setCart(obj));
-        dispatch(setTotalPrice(+obj.price))
+        dispatch(addItem(obj));
+        // dispatch(setTotalPrice(+obj.price))
     };
 
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cart));
-    }, [cart])
+        localStorage.setItem('price', JSON.stringify(price));
+    }, [cart, price])
 
     const like = (e) => {
         e.target.classList.toggle('make-orange');

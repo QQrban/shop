@@ -3,8 +3,7 @@ import { useSelector } from 'react-redux';
 import TopTitle from './TopTitle';
 
 const NewsBlog = () => {
-    const products = useSelector(state => state.products);
-    console.log(products);
+    const products = useSelector(state => state.products.products);
 
     return (
         <Box sx={{ mt: '60px' }}>
