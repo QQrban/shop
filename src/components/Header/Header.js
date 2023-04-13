@@ -148,9 +148,7 @@ export default function Header() {
                             >
                                 <AccountCircle fontSize='inherit' />
                             </IconButton>
-
                         </Box>
-
                         <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
                                 size="large"
@@ -163,7 +161,6 @@ export default function Header() {
                                 <MoreIcon />
                             </IconButton>
                         </Box>
-
                     </Toolbar>
                 </Container>
             </AppBar>

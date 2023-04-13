@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,7 +15,24 @@ import Tab from '@mui/material/Tab';
 import MenuItem from '@mui/material/MenuItem';
 import SearchIcon from '@mui/icons-material/Search';
 
-const pages = ['Home', 'Products', 'Services', 'News'];
+const pages = [
+    {
+        name: 'Home',
+        link: '',
+    },
+    {
+        name: 'Products',
+        link: 'products',
+    },
+    {
+        name: 'Services',
+        link: 'services',
+    },
+    {
+        name: 'News',
+        link: 'news',
+    },
+];
 
 function a11yProps(index) {
     return {
@@ -63,8 +81,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 function Burger() {
+
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [value, setValue] = React.useState(0);
+
+    const navigate = useNavigate();
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -113,8 +134,8 @@ function Burger() {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                                    <Typography onClick={() => navigate(`/${page.link}`)} textAlign="center">{page.name}</Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -127,8 +148,8 @@ function Burger() {
                             textColor="inherit"
                             variant="fullWidth"
                         >
-                            <Tab label="Home" {...a11yProps(0)} />
-                            <Tab label="Products" {...a11yProps(1)} />
+                            <Tab onClick={() => navigate('/')} label="Home" {...a11yProps(0)} />
+                            <Tab onClick={() => navigate('/products')} label="Products" {...a11yProps(1)} />
                             <Tab label="Services" {...a11yProps(2)} />
                             <Tab label="News" {...a11yProps(3)} />
                         </Tabs>

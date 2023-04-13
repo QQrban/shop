@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { Drawer, Box, Typography, Container, Grid, Paper } from '@mui/material';
+import { Drawer, Box, Typography, Container, Grid, Paper, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { useSelector, useDispatch } from 'react-redux';
 import { setOpenCart } from '../../../services/stateService';
-import { plusItem, minusItem, removeItem, calculateTotals } from '../../../services/cartSlice';
+import { plusItem, minusItem, removeItem, calculateTotals, clearItems } from '../../../services/cartSlice';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -51,9 +51,23 @@ const Cart = () => {
                         >
                             Checkout
                         </Typography>
-                        <Typography>
-                            {totalPrice}
-                        </Typography>
+                        <Box sx={{ textAlign: 'right' }}>
+                            <Typography
+                                component='div'
+                                variant='h4'
+                            >
+                                Total Price: <span style={{ color: 'orange', fontWeight: '500' }}>${totalPrice}</span>
+                            </Typography>
+                        </Box>
+                        <Box
+                            sx={{
+                                textAlign: 'right',
+                                mt: 2,
+                            }}
+                        >
+                            {cart.length ? <Button sx={{ ':hover': { bgcolor: 'orange' } }} variant='contained'>Proceed to Payment</Button> : null}
+                        </Box>
+                        {cart.length ? <Button onClick={() => dispatch(clearItems())} sx={{ color: 'orange' }}>clear cart</Button> : null}
                         <Grid container sx={{ gap: 4, mt: 5 }}>
                             {cart.length ? cart.map(item => (
                                 <Grid key={item.id} item xs={12}>
