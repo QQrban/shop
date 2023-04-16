@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Container } from '@mui/material'
 import MainPoster from '../components/Body/Home/MainPoster';
-import HotCategories from '../components/Body/Home/HotCategories';
 import PopularGoods from '../components/Body/Home/PopularGoods';
 import NewGoods from '../components/Body/Home/NewGoods';
 import SuperSale from '../components/Body/Home/SuperSale';
@@ -25,7 +24,6 @@ const HomePage = () => {
         <main>
             <Container>
                 <MainPoster />
-                <HotCategories />
                 <PopularGoods />
                 <NewGoods />
                 <SecondaryPoster />

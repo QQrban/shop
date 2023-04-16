@@ -41,7 +41,7 @@ const SecondaryPoster = () => {
                         }}
                     >
                         We will exchange your
-                        <span style={{ color: 'orange' }}> laptop</span> on trade in</Typography>
+                        <span style={{ color: 'orange' }}> phone</span> on trade in</Typography>
                     <Typography
                         variant='p'
                         sx={{

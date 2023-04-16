@@ -2,7 +2,8 @@ import { Box } from '@mui/material'
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
-import { categories } from '../../../helpers/category';
+import { categories } from './category';
+
 
 
 const ProdCategories = () => {
@@ -15,10 +16,10 @@ const ProdCategories = () => {
     }
 
     return (
-        <Box sx={{ mt: '80px' }}>
+        <Box sx={{ mt: 12 }}>
             <Grid sx={{ flexGrow: 1, mt: '50px' }} container>
                 <Grid item xs={12}>
-                    <Grid container justifyContent="center" spacing={1}>
+                    <Grid container justifyContent="center" spacing={{ xs: 1, sm: 3 }}>
                         {categories.map((category, i) => (
                             <Grid key={i} item >
                                 <Paper
@@ -39,7 +40,7 @@ const ProdCategories = () => {
                                     }}
                                 >
                                     <Box sx={{ textAlign: 'center', pointerEvents: 'none' }}>
-                                        <category.icon sx={{ fontSize: { sm: 52, xs: 39 }, }} />
+                                        <category.icon size={52} />
                                     </Box>
                                     <Paper className='category-descr' sx={{
                                         position: 'absolute',

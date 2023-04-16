@@ -103,6 +103,10 @@ footer {
     background-color: #ffa500 !important;
 }
 
+.MuiSlider-markLabel {
+    font-size: 10px !important;
+}
+
 .make-orange {
     background-color: orange;
 }
@@ -111,6 +115,7 @@ footer {
 }
 .make-white {
     color: white;
+
 }
 
 @media (max-width: 698px) {

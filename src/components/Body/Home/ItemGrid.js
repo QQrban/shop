@@ -5,7 +5,6 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { addItem } from '../../../services/cartSlice';
-// import { setCart, setTotalPrice } from '../../../services/stateService';
 
 const ItemGrid = ({ item }) => {
 
@@ -21,7 +20,6 @@ const ItemGrid = ({ item }) => {
             price: item.price,
         };
         dispatch(addItem(obj));
-        // dispatch(setTotalPrice(+obj.price))
     };
 
     useEffect(() => {

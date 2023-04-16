@@ -2,41 +2,41 @@
   {
     "top_products": [
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/337865-502645-medium.png",
-        "name": "Samsung AU7092, 65'', Ultra HD",
-        "price": "700",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/316026-475949-medium.png",
+        "name": "Samsung Galaxy A53 5G, 128 GB, white",
+        "price": "390",
         "id": "1"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/271966-412955-medium.png",
-        "name": "Apple MacBook Air 13 (2020), M1 8C/7C, 8 GB, 256 GB",
-        "price": "1050",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/324929-489204-medium.png",
+        "name": "Samsung Galaxy A13 5G, 64 GB, light blue",
+        "price": "190",
         "id": "2"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/316024-475945-medium.png",
-        "name": "Samsung Galaxy A53 5G, 128 GB, black",
-        "price": "700",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/332579-500066-medium.png",
+        "name": "Xiaomi 12 Lite, 128 GB, pink",
+        "price": "450",
         "id": "3"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/332022-499140-medium.png",
-        "name": "JBL Vibe 200TWS, black",
-        "price": "70",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/341861-514082-medium.png",
+        "name": "Samsung Galaxy S23 Ultra, 512 GB, green",
+        "price": "1500",
         "id": "4"
       }
     ],
     "new_products": [
       {
-        "img": "https://ee2.pigugroup.eu/colours/158/682/09/15868209/msi-katana-gf66-11ud-1011xpl5m2w11p-156-i7-940b1-hind_large.jpg",
-        "name": "MSI Katana GF66, 15.6, SSD 1TB, Windows 11",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/341777-513998-medium.png",
+        "name": "Samsung Galaxy S23, 256 GB, black",
         "price": "1150",
         "id": "5"
       },
       {
-        "img": "https://ee2.pigugroup.eu/colours/115/834/26/11583426/asus-rog-phone-6-ai2201-1a013eu-dual-ca149-hind_large.jpg",
-        "name": "ASUS ROG Phone 6 AI2201-1A013EU Dual SIM",
-        "price": "950",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/280558-425454-medium.png",
+        "name": "Samsung Galaxy xCover 5, 64 GB, black",
+        "price": "260",
         "id": "6"
       },
       {
@@ -46,39 +46,39 @@
         "id": "7"
       },
       {
-        "img": "https://ee2.pigugroup.eu/colours/107/668/80/10766880/50-4k-uhd-led-google-tv-sony-121d7-hind_large.jpg",
-        "name": "50 4K UHD LED Google TV Sony KD50X81KAEP",
-        "price": "400",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/325829-490317-medium.png",
+        "name": "Samsung Galaxy Flip4, 512 GB, graphite",
+        "price": "1100",
         "id": "8"
       }
     ],
     "discount": [
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/325829-490317-medium.png",
-        "name": "Samsung Galaxy Flip4, 512 GB, graphite - Smartphone",
-        "price": "1050",
-        "discount": "$1120",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/346040-520178-medium.png",
+        "name": "Samsung Galaxy A54 5G, 8 GB / 128 GB, white",
+        "price": "450",
+        "discount": "$500",
         "id": "9"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/345487-519307-medium.png",
-        "name": "Apple iPhone 14, 512 GB, yellow - Smartphone",
-        "price": "1200",
-        "discount": "$1450",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/346037-520172-medium.png",
+        "name": "Samsung Galaxy A34 5G, 6 GB / 128 GB, green",
+        "price": "360",
+        "discount": "$400",
         "id": "10"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/337542-469360-medium.png",
-        "name": "MSI GF63 Thin 11UD, 15.6, i5, 8 GB, 512 GB",
-        "price": "260",
-        "discount": "$180",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/345993-520122-medium.png",
+        "name": "Samsung Galaxy A14 5G, 4 GB / 128 GB, black",
+        "price": "350",
+        "discount": "$420",
         "id": "11"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/218647-111-medium.png",
-        "name": "Apple AirPods 2 - True-Wireless Earbuds",
-        "price": "110",
-        "discount": "$160",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/345988-520112-medium.png",
+        "name": "Samsung Galaxy A14 5G, 4 GB / 64 GB, green",
+        "price": "220",
+        "discount": "$250",
         "id": "12"
       }
     ],
