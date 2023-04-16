@@ -1,43 +1,11 @@
 import { Box, Button, Typography } from '@mui/material'
-import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import LaptopIcon from '@mui/icons-material/Laptop';
-import WatchIcon from '@mui/icons-material/Watch';
-import DesktopWindowsIcon from '@mui/icons-material/DesktopWindows';
-import RouterIcon from '@mui/icons-material/Router';
-import HomeMaxIcon from '@mui/icons-material/HomeMax';
+import { categories } from '../../../helpers/category';
 
 
 const HotCategories = () => {
-
-    const categories = [
-        {
-            icon: PhoneIphoneIcon,
-            text: 'Smartphones',
-        },
-        {
-            icon: LaptopIcon,
-            text: 'Computers',
-        },
-        {
-            icon: WatchIcon,
-            text: 'Smartwatches',
-        },
-        {
-            icon: DesktopWindowsIcon,
-            text: 'TVs and monitors',
-        },
-        {
-            icon: RouterIcon,
-            text: 'Network hardware',
-        },
-        {
-            icon: HomeMaxIcon,
-            text: 'Smart house',
-        },
-    ]
 
 
     return (
@@ -70,7 +38,7 @@ const HotCategories = () => {
             <Grid sx={{ flexGrow: 1, mt: '50px' }} container>
                 <Grid item xs={12}>
                     <Grid container justifyContent="center" spacing={4}>
-                        {categories.map((category, i) => (
+                        {categories.slice(0, 6).map((category, i) => (
                             <Grid key={i} item>
                                 <Paper
                                     sx={{

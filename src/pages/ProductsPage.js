@@ -1,20 +1,11 @@
-import { Container, Typography } from '@mui/material'
-import Categories from '../components/Body/Products/Categories'
+import { Container } from '@mui/material'
+import ProdCategories from '../components/Body/Products/ProdCategories'
 
 const ProductsPage = () => {
     return (
         <main>
             <Container>
-                <Typography
-                    variant='h2'
-                    component='h1'
-                    sx={{
-                        mt: '140px',
-                        fontWeight: 500,
-                        fontSize: 45,
-                    }}
-                >Categories</Typography>
-                <Categories />
+                <ProdCategories />
             </Container>
         </main>
     )
