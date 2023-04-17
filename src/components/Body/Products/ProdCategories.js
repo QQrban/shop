@@ -4,10 +4,7 @@ import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
 import { categories } from './category';
 
-
-
 const ProdCategories = () => {
-
     const showme = e => {
         e.target.children[1].classList.add('visible')
     }
@@ -64,7 +61,6 @@ const ProdCategories = () => {
                                         >
                                             {category.text.length < 12 ? category.text : category.text.split(' ')[0]}
                                         </Typography>
-
                                     </Paper>
                                 </Paper>
                             </Grid>

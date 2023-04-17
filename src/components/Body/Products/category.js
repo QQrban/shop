@@ -5,7 +5,7 @@ import {
     SiNokia,
     SiSony,
     SiHuawei
-} from 'react-icons/si'
+} from 'react-icons/si';
 
 export const categories = [
     {
@@ -32,4 +32,4 @@ export const categories = [
         icon: SiHuawei,
         text: 'Huawei',
     },
-]
+];
