@@ -1,6 +1,10 @@
-import { Box, Typography, Button } from '@mui/material'
+import { Box, Typography, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const TopTitle = ({ name }) => {
+
+    const navigate = useNavigate()
+
     return (
         <Box
             sx={{
@@ -21,6 +25,7 @@ const TopTitle = ({ name }) => {
                 <div className="hot-category-subtl">{name}</div>
             </Typography>
             <Button
+                onClick={() => navigate('/products')}
                 sx={{
                     color: 'orange',
                     ':hover': {

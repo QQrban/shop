@@ -8,7 +8,7 @@ const ProdBody = () => {
         <Box sx={{
             display: 'flex',
             flexWrap: 'wrap',
-            gap: 4,
+            gap: 10,
             mt: 8,
         }}>
 

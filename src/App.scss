@@ -107,6 +107,10 @@ footer {
     font-size: 10px !important;
 }
 
+.MuiFormControlLabel-label {
+    text-transform: capitalize;
+}
+
 .make-orange {
     background-color: orange;
 }
