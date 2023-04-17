@@ -3,7 +3,7 @@ import { Typography, FormControlLabel, Checkbox } from "@mui/material";
 
 const ColorFilter = () => {
     return (
-        <Accordion>
+        <Accordion defaultExpanded>
             <AccordionSummary >
                 <Typography>Color</Typography>
             </AccordionSummary>

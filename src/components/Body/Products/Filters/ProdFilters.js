@@ -9,8 +9,12 @@ export default function ProdFIlters() {
 
     return (
         <Paper sx={{
-            width: 320,
-            overflow: 'hidden'
+            width: { xs: '100%', md: 300 },
+            borderRadius: '14px',
+            alignSelf: 'flex-start',
+            overflow: 'hidden',
+            position: { md: 'sticky', xs: 'static' },
+            top: '150px'
         }}>
             <SearchFilter />
             <PriceFilter />
