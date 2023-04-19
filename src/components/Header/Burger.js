@@ -38,9 +38,7 @@ function a11yProps(index) {
     };
 }
 
-
 function Burger() {
-
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [value, setValue] = React.useState(0);
 
@@ -60,9 +58,8 @@ function Burger() {
 
     const navigation = (link) => {
         window.scrollTo(0, 0);
-        navigate(link)
-    }
-
+        navigate(link);
+    };
 
     return (
         <AppBar position="static">
@@ -99,7 +96,12 @@ function Burger() {
                         >
                             {pages.map((page) => (
                                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                                    <Typography onClick={() => navigation(`/${page.link}`)} textAlign="center">{page.name}</Typography>
+                                    <Typography
+                                        onClick={() => navigation(`/${page.link}`)}
+                                        textAlign="center"
+                                    >
+                                        {page.name}
+                                    </Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -112,8 +114,16 @@ function Burger() {
                             textColor="inherit"
                             variant="fullWidth"
                         >
-                            <Tab onClick={() => navigation('/')} label="Home" {...a11yProps(0)} />
-                            <Tab onClick={() => navigation('/products')} label="Products" {...a11yProps(1)} />
+                            <Tab
+                                onClick={() => navigation('/')}
+                                label="Home"
+                                {...a11yProps(0)}
+                            />
+                            <Tab
+                                onClick={() => navigation('/products')}
+                                label="Products"
+                                {...a11yProps(1)}
+                            />
                             <Tab label="Services" {...a11yProps(2)} />
                             <Tab label="News" {...a11yProps(3)} />
                         </Tabs>

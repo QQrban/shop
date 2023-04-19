@@ -7,10 +7,9 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { addItem } from '../../../services/cartSlice';
 
 const ItemGrid = ({ item }) => {
-
     const dispatch = useDispatch();
-    const cart = useSelector(state => state.cart.cart);
-    const price = useSelector(state => state.cart.totalPrice)
+    const cart = useSelector((state) => state.cart.cart);
+    const price = useSelector((state) => state.cart.totalPrice);
 
     const onClickAdd = (item) => {
         const obj = {
@@ -25,13 +24,12 @@ const ItemGrid = ({ item }) => {
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cart));
         localStorage.setItem('price', JSON.stringify(price));
-    }, [cart, price])
+    }, [cart, price]);
 
     const like = (e) => {
         e.target.classList.toggle('make-orange');
         e.target.children[0].classList.toggle('make-white');
     };
-
 
     return (
         <Grid item>
@@ -76,15 +74,22 @@ const ItemGrid = ({ item }) => {
                             alignItems: 'center',
                         }}
                     >
-                        <Typography sx={{ fontWeight: 500, fontSize: '19px', position: 'relative' }}>
+                        <Typography
+                            sx={{ fontWeight: 500, fontSize: '19px', position: 'relative' }}
+                        >
                             ${item.price}
-                            <Typography sx={{
-                                position: 'absolute',
-                                top: '-15px',
-                                color: 'orange',
-                                textDecoration: 'line-through',
-                                fontSize: '14px'
-                            }} component='span'>{item.discount}</Typography>
+                            <Typography
+                                sx={{
+                                    position: 'absolute',
+                                    top: '-15px',
+                                    color: 'orange',
+                                    textDecoration: 'line-through',
+                                    fontSize: '14px',
+                                }}
+                                component="span"
+                            >
+                                {item.discount}
+                            </Typography>
                         </Typography>
                         <Box
                             sx={{
@@ -125,7 +130,7 @@ const ItemGrid = ({ item }) => {
                 </Box>
             </Paper>
         </Grid>
-    )
-}
+    );
+};
 
-export default ItemGrid
+export default ItemGrid;

@@ -276,7 +276,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1662640953/N53346840A_1.jpg?format=avif&width=240",
+        "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQURLVteQQT8K2w5Wgomyp3rxQyWJd2KqMHYgaSAM3370aIRkIa",
         "name": "iPhone 14 Pro Max 256GB 5G",
         "price": "1300",
         "id": "653",
@@ -443,6 +443,56 @@
         "year": "2020",
         "memory": "16",
         "color": "black",
+        "producer": "sony"
+      },
+      {
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/329314-495197-medium.png",
+        "name": "Apple iPhone 11 Pro 64GB Gold",
+        "price": "550",
+        "id": "670",
+        "year": "2021",
+        "memory": "64",
+        "color": "other",
+        "producer": "apple"
+      },
+      {
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/315055-474496-medium.png",
+        "name": "Apple iPhone SE 64GB White",
+        "price": "300",
+        "id": "671",
+        "year": "2020",
+        "memory": "64",
+        "color": "white",
+        "producer": "apple"
+      },
+      {
+        "img": "https://cdn.shopify.com/s/files/1/0575/3628/2777/products/s-l1600_5_a904a861-6884-4845-9133-c80e1cf3112a.jpg?v=1624120639&width=800",
+        "name": "Apple iPhone 11 128GB Silver",
+        "price": "650",
+        "id": "672",
+        "year": "2021",
+        "memory": "128",
+        "color": "silver",
+        "producer": "apple"
+      },
+      {
+        "img": "https://mobilebuyprice.com/wp-content/uploads/2023/02/Nokia-X30-5G.jpg",
+        "name": "Nokia X30 5G 128GB Silver",
+        "price": "450",
+        "id": "673",
+        "year": "2021",
+        "memory": "128",
+        "color": "silver",
+        "producer": "nokia"
+      },
+      {
+        "img": "https://greenfox.ee/wp-content/uploads/2023/03/Sony-Xperia-M5-White.jpg",
+        "name": "Sony Xperia M5 White 24GB",
+        "price": "60",
+        "id": "674",
+        "year": "2020",
+        "memory": "24",
+        "color": "white",
         "producer": "sony"
       }
     ]

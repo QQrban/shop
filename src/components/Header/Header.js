@@ -21,13 +21,12 @@ export default function Header() {
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
 
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-    const cart = useSelector(state => state.cart.cart);
+    const cart = useSelector((state) => state.cart.cart);
     const dispatch = useDispatch();
 
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);
     };
-
 
     const handleMobileMenuOpen = (event) => {
         setMobileMoreAnchorEl(event.currentTarget);
@@ -88,17 +87,22 @@ export default function Header() {
     );
 
     return (
-        <Box position='fixed' sx={{ flexGrow: 1, width: '100%', zIndex: '55' }}>
-            <AppBar position="static" >
+        <Box position="fixed" sx={{ flexGrow: 1, width: '100%', zIndex: '55' }}>
+            <AppBar position="static">
                 <Container>
-                    <Toolbar >
+                    <Toolbar>
                         <a href="/">
                             <Typography
                                 variant="h4"
                                 noWrap
                                 component="div"
                                 sx={{
-                                    display: { xs: 'none', md: 'block', fontWeight: '600', marginRight: '10px' }
+                                    display: {
+                                        xs: 'none',
+                                        md: 'block',
+                                        fontWeight: '600',
+                                        marginRight: '10px',
+                                    },
                                 }}
                             >
                                 React
@@ -113,7 +117,7 @@ export default function Header() {
                                 noWrap
                                 component="div"
                                 sx={{
-                                    display: { sm: 'block', md: 'none', fontWeight: '600' }
+                                    display: { sm: 'block', md: 'none', fontWeight: '600' },
                                 }}
                             >
                                 React
@@ -131,11 +135,16 @@ export default function Header() {
                                 aria-haspopup="true"
                                 color="inherit"
                             >
-                                <FavoriteBorderIcon fontSize='inherit' />
+                                <FavoriteBorderIcon fontSize="inherit" />
                             </IconButton>
-                            <IconButton onClick={() => dispatch(setOpenCart(true))} size="large" aria-label="show 4 new mails" color="inherit">
+                            <IconButton
+                                onClick={() => dispatch(setOpenCart(true))}
+                                size="large"
+                                aria-label="show 4 new mails"
+                                color="inherit"
+                            >
                                 <Badge badgeContent={cart.length} color="error">
-                                    <ShoppingBasketIcon fontSize='inherit' />
+                                    <ShoppingBasketIcon fontSize="inherit" />
                                 </Badge>
                             </IconButton>
                             <IconButton
@@ -146,7 +155,7 @@ export default function Header() {
                                 aria-haspopup="true"
                                 color="inherit"
                             >
-                                <AccountCircle fontSize='inherit' />
+                                <AccountCircle fontSize="inherit" />
                             </IconButton>
                         </Box>
                         <Box sx={{ display: { xs: 'flex', md: 'none' } }}>

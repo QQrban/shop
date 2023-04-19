@@ -2,8 +2,7 @@ import { Box, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 const TopTitle = ({ name }) => {
-
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     return (
         <Box
@@ -37,7 +36,7 @@ const TopTitle = ({ name }) => {
                 Show all
             </Button>
         </Box>
-    )
-}
+    );
+};
 
-export default TopTitle
+export default TopTitle;

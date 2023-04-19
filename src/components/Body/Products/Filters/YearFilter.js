@@ -1,5 +1,9 @@
-import { Accordion, AccordionDetails, AccordionSummary } from "./AccordionStyle";
-import { Typography } from "@mui/material";
+import {
+    Accordion,
+    AccordionDetails,
+    AccordionSummary,
+} from './AccordionStyle';
+import { Typography } from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
@@ -21,7 +25,7 @@ const YearFilter = () => {
                 ))}
             </AccordionDetails>
         </Accordion>
-    )
-}
+    );
+};
 
-export default YearFilter
+export default YearFilter;

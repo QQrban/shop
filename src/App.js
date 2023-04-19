@@ -11,7 +11,6 @@ import { getAllProducts } from './services/apiService';
 import { setProducts } from './services/stateService';
 
 function App() {
-
     const dispatch = useDispatch();
 
     useEffect(() => {

@@ -1,5 +1,9 @@
-import { Accordion, AccordionDetails, AccordionSummary } from "./AccordionStyle";
-import { Typography, Box, InputBase } from "@mui/material";
+import {
+    Accordion,
+    AccordionDetails,
+    AccordionSummary,
+} from './AccordionStyle';
+import { Typography, Box, InputBase } from '@mui/material';
 
 const inputStyles = {
     maxWidth: 60,
@@ -7,7 +11,7 @@ const inputStyles = {
     bgcolor: 'rgb(223, 223, 223)',
     p: '0 4px',
     borderRadius: '5px',
-}
+};
 
 const PriceFilter = () => {
     return (
@@ -17,13 +21,12 @@ const PriceFilter = () => {
             </AccordionSummary>
             <AccordionDetails>
                 <Box sx={{ display: 'flex', gap: 1 }}>
-                    <InputBase sx={inputStyles} type='number' />
-                    <InputBase sx={inputStyles} type='number' />
+                    <InputBase sx={inputStyles} type="number" />
+                    <InputBase sx={inputStyles} type="number" />
                 </Box>
             </AccordionDetails>
         </Accordion>
+    );
+};
 
-    )
-}
-
-export default PriceFilter
+export default PriceFilter;

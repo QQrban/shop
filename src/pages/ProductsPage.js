@@ -1,6 +1,6 @@
-import { Container } from '@mui/material'
-import ProdCategories from '../components/Body/Products/ProdCategories'
-import ProdBody from '../components/Body/Products/ProdBody'
+import { Container } from '@mui/material';
+import ProdCategories from '../components/Body/Products/ProdCategories';
+import ProdBody from '../components/Body/Products/ProdBody';
 
 const ProductsPage = () => {
     return (
@@ -10,7 +10,7 @@ const ProductsPage = () => {
                 <ProdBody />
             </Container>
         </main>
-    )
-}
+    );
+};
 
-export default ProductsPage
+export default ProductsPage;

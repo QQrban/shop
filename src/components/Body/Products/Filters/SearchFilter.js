@@ -1,5 +1,5 @@
-import React from 'react'
-import { Paper, InputBase, IconButton } from '@mui/material'
+import React from 'react';
+import { Paper, InputBase, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
 const SearchFilter = () => {
@@ -10,7 +10,7 @@ const SearchFilter = () => {
                 display: 'flex',
                 alignItems: 'center',
                 p: 0,
-                borderRadius: 0
+                borderRadius: 0,
             }}
         >
             <InputBase
@@ -21,7 +21,7 @@ const SearchFilter = () => {
                 <SearchIcon sx={{ marginRight: 1 }} />
             </IconButton>
         </Paper>
-    )
-}
+    );
+};
 
 export default SearchFilter;

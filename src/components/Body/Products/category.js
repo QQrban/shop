@@ -4,7 +4,7 @@ import {
     SiXiaomi,
     SiNokia,
     SiSony,
-    SiHuawei
+    SiHuawei,
 } from 'react-icons/si';
 
 export const categories = [
