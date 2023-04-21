@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Box, Typography, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
@@ -6,7 +6,16 @@ import Paper from '@mui/material/Paper';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { addItem } from '../../../services/cartSlice';
 
+const chosenLang = {
+    ENG: ['buy',],
+    EE: ['osta'],
+    RU: ['купить'],
+};
+
 const ItemGrid = ({ item }) => {
+    const [selectedLang, setSelectedLang] = useState(chosenLang.ENG);
+    const language = useSelector(state => state.products.language);
+
     const dispatch = useDispatch();
     const cart = useSelector((state) => state.cart.cart);
     const price = useSelector((state) => state.cart.totalPrice);
@@ -21,15 +30,26 @@ const ItemGrid = ({ item }) => {
         dispatch(addItem(obj));
     };
 
+    const like = (e) => {
+        e.target.classList.toggle('make-orange');
+        e.target.children[0].classList.toggle('make-white');
+    };
+
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cart));
         localStorage.setItem('price', JSON.stringify(price));
     }, [cart, price]);
 
-    const like = (e) => {
-        e.target.classList.toggle('make-orange');
-        e.target.children[0].classList.toggle('make-white');
-    };
+    useEffect(() => {
+        const onChoose = () => {
+            for (const key in chosenLang) {
+                if (language === key) {
+                    setSelectedLang(chosenLang[key]);
+                }
+            }
+        }
+        onChoose();
+    }, [language])
 
     return (
         <Grid item>
@@ -123,7 +143,7 @@ const ItemGrid = ({ item }) => {
                                 }}
                                 variant="contained"
                             >
-                                Buy
+                                {selectedLang}
                             </Button>
                         </Box>
                     </Box>

@@ -2,25 +2,25 @@
   {
     "top_products": [
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/316026-475949-medium.png",
+        "img": "https://i.ibb.co/Mc2YD48/samsung-top-a53.png",
         "name": "Samsung Galaxy A53 5G, 128 GB, white",
         "price": "390",
         "id": "1"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/324929-489204-medium.png",
+        "img": "https://i.ibb.co/hHV3QXQ/samsung-top-a13.png",
         "name": "Samsung Galaxy A13 5G, 64 GB, light blue",
         "price": "190",
         "id": "2"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/332579-500066-medium.png",
+        "img": "https://i.ibb.co/CwjQsCy/xiaomi-top.png",
         "name": "Xiaomi 12 Lite, 128 GB, pink",
         "price": "450",
         "id": "3"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/341861-514082-medium.png",
+        "img": "https://i.ibb.co/TcBmx7y/samsung-top-s23.png",
         "name": "Samsung Galaxy S23 Ultra, 512 GB, green",
         "price": "1500",
         "id": "4"
@@ -28,13 +28,13 @@
     ],
     "new_products": [
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/341777-513998-medium.png",
+        "img": "https://i.ibb.co/Nn5j3qM/samsung-new-s23.png",
         "name": "Samsung Galaxy S23, 256 GB, black",
         "price": "1150",
         "id": "5"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/280558-425454-medium.png",
+        "img": "https://i.ibb.co/SXd1gGb/samsung-new-xcover.png",
         "name": "Samsung Galaxy xCover 5, 64 GB, black",
         "price": "260",
         "id": "6"
@@ -46,7 +46,7 @@
         "id": "7"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/325829-490317-medium.png",
+        "img": "https://i.ibb.co/QcqVn0s/samsung-new-flip4.png",
         "name": "Samsung Galaxy Flip4, 512 GB, graphite",
         "price": "1100",
         "id": "8"
@@ -54,28 +54,28 @@
     ],
     "discount": [
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/346040-520178-medium.png",
+        "img": "https://i.ibb.co/LnCdpJB/samsung-discount-a54.png",
         "name": "Samsung Galaxy A54 5G, 8 GB / 128 GB, white",
         "price": "450",
         "discount": "$500",
         "id": "9"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/346037-520172-medium.png",
+        "img": "https://i.ibb.co/cJH3mBK/samsung-discount-a34.png",
         "name": "Samsung Galaxy A34 5G, 6 GB / 128 GB, green",
         "price": "360",
         "discount": "$400",
         "id": "10"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/345993-520122-medium.png",
+        "img": "https://i.ibb.co/P4nQVg5/samsung-discount-a14.png",
         "name": "Samsung Galaxy A14 5G, 4 GB / 128 GB, black",
         "price": "350",
         "discount": "$420",
         "id": "11"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/345988-520112-medium.png",
+        "img": "https://i.ibb.co/wKt2s0C/samsung-discount-a14-2.png",
         "name": "Samsung Galaxy A14 5G, 4 GB / 64 GB, green",
         "price": "220",
         "discount": "$250",
@@ -142,7 +142,7 @@
     ],
     "all_products": [
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/316026-475949-medium.png",
+        "img": "https://i.ibb.co/Mc2YD48/samsung-top-a53.png",
         "name": "Samsung Galaxy A53 5G, 128 GB, white",
         "price": "390",
         "id": "1",
@@ -152,7 +152,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/324929-489204-medium.png",
+        "img": "https://i.ibb.co/hHV3QXQ/samsung-top-a13.png",
         "name": "Samsung Galaxy A13 5G, 64 GB, light blue",
         "price": "190",
         "id": "2",
@@ -172,7 +172,7 @@
         "producer": "xiaomi"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/341861-514082-medium.png",
+        "img": "https://i.ibb.co/TcBmx7y/samsung-top-s23.png",
         "name": "Samsung Galaxy S23 Ultra, 512 GB, green",
         "price": "1500",
         "id": "4",
@@ -182,7 +182,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/341777-513998-medium.png",
+        "img": "https://i.ibb.co/Nn5j3qM/samsung-new-s23.png",
         "name": "Samsung Galaxy S23, 256 GB, black",
         "price": "1150",
         "id": "5",
@@ -192,7 +192,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/280558-425454-medium.png",
+        "img": "https://i.ibb.co/SXd1gGb/samsung-new-xcover.png",
         "name": "Samsung Galaxy xCover 5, 64 GB, black",
         "price": "260",
         "id": "6",
@@ -212,7 +212,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/325829-490317-medium.png",
+        "img": "https://i.ibb.co/QcqVn0s/samsung-new-flip4.png",
         "name": "Samsung Galaxy Flip4, 512 GB, graphite",
         "price": "1100",
         "id": "8",
@@ -222,7 +222,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/346040-520178-medium.png",
+        "img": "https://i.ibb.co/LnCdpJB/samsung-discount-a54.png",
         "name": "Samsung Galaxy A54 5G, 8 GB / 128 GB, white",
         "price": "450",
         "discount": "$500",
@@ -233,7 +233,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/346037-520172-medium.png",
+        "img": "https://i.ibb.co/cJH3mBK/samsung-discount-a34.png",
         "name": "Samsung Galaxy A34 5G, 6 GB / 128 GB, green",
         "price": "360",
         "discount": "$400",
@@ -244,7 +244,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/345993-520122-medium.png",
+        "img": "https://i.ibb.co/P4nQVg5/samsung-discount-a14.png",
         "name": "Samsung Galaxy A14 5G, 4 GB / 128 GB, black",
         "price": "350",
         "discount": "$420",
@@ -255,7 +255,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/345988-520112-medium.png",
+        "img": "https://i.ibb.co/wKt2s0C/samsung-discount-a14-2.png",
         "name": "Samsung Galaxy A14 5G, 4 GB / 64 GB, green",
         "price": "220",
         "discount": "$250",
@@ -266,7 +266,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://www.soklyphone.com/storage/SAMSUNG/Phone/Galaxy-ZFlip4/Red/untitled-1-1680754211YDqgV.png",
+        "img": "https://i.ibb.co/s1WskYn/samsung-z-flip.png",
         "name": "Galaxy Z Flip4 Red Edition, 4GB / 128GB",
         "price": "850",
         "id": "652",
@@ -276,7 +276,7 @@
         "producer": "samsung"
       },
       {
-        "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQURLVteQQT8K2w5Wgomyp3rxQyWJd2KqMHYgaSAM3370aIRkIa",
+        "img": "https://i.ibb.co/LZPgggp/iphone-14promaxblack.png",
         "name": "iPhone 14 Pro Max 256GB 5G",
         "price": "1300",
         "id": "653",
@@ -286,7 +286,7 @@
         "producer": "apple"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1677738954/N53388201A_1.jpg?format=avif&width=240",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/345942-520052-medium.png",
         "name": "13 Lite Dual Sim Black 8GB RAM 256 GB 5G",
         "price": "1100",
         "id": "654",
@@ -296,7 +296,7 @@
         "producer": "xiaomi"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1664964108/N53355383A_2.jpg?format=avif&width=240",
+        "img": "https://i.ibb.co/dJkxfMD/xiaomi-black-13.png",
         "name": "Redmi Note 10 Pro Onyx Gray 8GB RAM 256GB 4G",
         "price": "900",
         "id": "655",
@@ -306,9 +306,9 @@
         "producer": "xiaomi"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1667287673/N53362561A_1.jpg?format=avif&width=240",
-        "name": "Redmi Pad 10.61 Inch Graphite Grey 6GB RAM 128GB",
-        "price": "650",
+        "img": "https://i.ibb.co/VmschDZ/redminote10pro.png",
+        "name": "Xiaomi Redmi Note 10 Pro Silver 128GB",
+        "price": "850",
         "id": "656",
         "year": "2022",
         "memory": "128",
@@ -316,7 +316,7 @@
         "producer": "xiaomi"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1673499669/N53376679A_1.jpg?format=avif&width=240",
+        "img": "https://i.ibb.co/sJh1tCk/xiaomi-poco.png",
         "name": "Poco X5 Pro Dual SIM Blue 8GB RAM 256GB 5G",
         "price": "1100",
         "id": "657",
@@ -326,8 +326,8 @@
         "producer": "xiaomi"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1652344658/N53316383A_1.jpg?format=avif&width=240",
-        "name": "Redmi 9A Dual Sim Lake Green 4GB RAM 64GB 4G",
+        "img": "https://i.ibb.co/QJFBmd0/xiaomi-redmi-note10-pro.jpg",
+        "name": "Redmi 9A Dual Sim 4GB RAM 64GB 4G",
         "price": "320",
         "id": "658",
         "year": "2020",
@@ -336,8 +336,8 @@
         "producer": "xiaomi"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1605988857/N38249432A_1.jpg?format=avif&width=240",
-        "name": "Redmi Note 9 Pro Global Specs Dual SIM 128GB/6GB",
+        "img": "https://i.ibb.co/sWS6MZg/xiaomi11tpro.jpg",
+        "name": "Xiaomi 11T Pro White 128GB",
         "price": "620",
         "id": "659",
         "year": "2020",
@@ -346,7 +346,7 @@
         "producer": "xiaomi"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1628065864/N49748681A_1.jpg?format=avif&width=240",
+        "img": "https://i.ibb.co/PZZHF1C/nokia-c1.jpg",
         "name": "C1 2nd Edition Blue Dual Sim 1GB Ram 16GB",
         "price": "150",
         "id": "660",
@@ -356,7 +356,7 @@
         "producer": "nokia"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1634457824/N51355605A_1.jpg?format=avif&width=240",
+        "img": "https://i.ibb.co/KjsBF2C/nokia-g50.jpg",
         "name": "G50 Dual Sim Midnight Sun 6GB RAM 128GB 5G",
         "price": "780",
         "id": "661",
@@ -366,7 +366,7 @@
         "producer": "nokia"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1665745492/N53357493A_1.jpg?format=avif&width=240",
+        "img": "https://fdn2.gsmarena.com/vv/bigpic/nokia-g21-dusk.jpg",
         "name": "G11 Dual SIM Charcoal 3GB RAM 32GB 4G",
         "price": "330",
         "id": "662",
@@ -376,17 +376,17 @@
         "producer": "nokia"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1652177165/N53299566A_1.jpg?format=avif&width=240",
+        "img": "https://i.ibb.co/KyLyWSv/nokia-y70.jpg",
         "name": "Nova Y70 Dual SIM 4GB RAM 128GB 4G",
         "price": "450",
         "id": "663",
-        "year": "2022",
+        "year": "2021",
         "memory": "128",
-        "color": "whi",
+        "color": "white",
         "producer": "huawei"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1666089815/N53357954A_1.jpg?format=avif&width=240",
+        "img": "https://i.ibb.co/jW7cztv/huawei-nova-10se.jpg",
         "name": "Nova 10 SE Dual 8GB RAM 256GB 4G",
         "price": "1020",
         "id": "664",
@@ -396,9 +396,9 @@
         "producer": "huawei"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1666783691/N53360039A_1.jpg?format=avif&width=240",
+        "img": "https://i.ibb.co/x6xYPh8/huawei-nova-y90.jpg",
         "name": "y9 Dual SIM Sapphire Blue 6GB RAM 128GB 4G LTE",
-        "price": "350",
+        "price": "450",
         "id": "665",
         "year": "2020",
         "memory": "128",
@@ -406,27 +406,27 @@
         "producer": "huawei"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1570774548/N30725054A_1.jpg?format=avif&width=240",
-        "name": "Xperia 5 Dual SIM Black 6GB RAM 128GB 4G LTE",
-        "price": "1450",
+        "img": "https://i.ibb.co/ryVJppm/sony-xperia-pro-i.jpg",
+        "name": "Sony Xperia Pro-I 12MP 64GB",
+        "price": "450",
         "id": "666",
-        "year": "2023",
-        "memory": "128",
+        "year": "2020",
+        "memory": "64",
         "color": "black",
         "producer": "sony"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1557838684/N22883413A_1.jpg?format=avif&width=240",
-        "name": "Xperia Z3 3GB RAM 16GB 4G LTE",
-        "price": "250",
+        "img": "https://i.ibb.co/Vj2DcsD/sony-xperia-10-iv.jpg",
+        "name": "Sony Xperia 10 IV 128GB",
+        "price": "850",
         "id": "667",
-        "year": "2020",
-        "memory": "16",
+        "year": "2022",
+        "memory": "128",
         "color": "other",
         "producer": "sony"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1665480722/N53356619A_1.jpg?format=avif&width=240",
+        "img": "https://i.ibb.co/r4VDv0n/sony-xperia-xz2.jpg",
         "name": "Xperia XZ2 Compact Single SIM4GB RAM 64GB 4G",
         "price": "320",
         "id": "668",
@@ -436,7 +436,7 @@
         "producer": "sony"
       },
       {
-        "img": "https://f.nooncdn.com/p/v1596474558/N22883412A_1.jpg?format=avif&width=240",
+        "img": "https://fdn2.gsmarena.com/vv/bigpic/sony-z5-.jpg",
         "name": "Xperia Z3 3GB RAM 16GB 4G LTE",
         "price": "250",
         "id": "669",
@@ -446,7 +446,7 @@
         "producer": "sony"
       },
       {
-        "img": "https://www.euronics.ee/UserFiles/Products/Images/329314-495197-medium.png",
+        "img": "https://i.ibb.co/Gx5tRgc/iphone11gold.png",
         "name": "Apple iPhone 11 Pro 64GB Gold",
         "price": "550",
         "id": "670",
@@ -466,7 +466,7 @@
         "producer": "apple"
       },
       {
-        "img": "https://cdn.shopify.com/s/files/1/0575/3628/2777/products/s-l1600_5_a904a861-6884-4845-9133-c80e1cf3112a.jpg?v=1624120639&width=800",
+        "img": "https://www.euronics.ee/UserFiles/Products/Images/329346-495187-medium.png",
         "name": "Apple iPhone 11 128GB Silver",
         "price": "650",
         "id": "672",
@@ -476,7 +476,7 @@
         "producer": "apple"
       },
       {
-        "img": "https://mobilebuyprice.com/wp-content/uploads/2023/02/Nokia-X30-5G.jpg",
+        "img": "https://i.ibb.co/DDspXXL/nokia-x30.jpg",
         "name": "Nokia X30 5G 128GB Silver",
         "price": "450",
         "id": "673",
@@ -486,7 +486,7 @@
         "producer": "nokia"
       },
       {
-        "img": "https://greenfox.ee/wp-content/uploads/2023/03/Sony-Xperia-M5-White.jpg",
+        "img": "https://i.ibb.co/cy90bts/sonyxperiam5.jpg",
         "name": "Sony Xperia M5 White 24GB",
         "price": "60",
         "id": "674",
@@ -494,6 +494,16 @@
         "memory": "24",
         "color": "white",
         "producer": "sony"
+      },
+      {
+        "img": "https://i.ibb.co/BVStyYf/huaweiblack.png",
+        "name": "Huawei Nova 10, 128 GB, black",
+        "price": "500",
+        "id": "675",
+        "year": "2020",
+        "memory": "128",
+        "color": "black",
+        "producer": "huawei"
       }
     ]
   }

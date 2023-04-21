@@ -1,5 +1,6 @@
-import * as React from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,24 +13,13 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = [
-    {
-        name: 'Home',
-        link: '',
-    },
-    {
-        name: 'Products',
-        link: 'products',
-    },
-    {
-        name: 'Services',
-        link: 'services',
-    },
-    {
-        name: 'News',
-        link: 'news',
-    },
-];
+
+const chosenLang = {
+    ENG: ['Home', 'Products', 'Services', 'News',],
+    EE: ['Esileht', 'Tooted', 'Teenused', 'Uudised'],
+    RU: ['Главная', 'Товары', 'Услуги', 'Новости'],
+};
+
 
 function a11yProps(index) {
     return {
@@ -39,9 +29,11 @@ function a11yProps(index) {
 }
 
 function Burger() {
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [value, setValue] = React.useState(0);
+    const [anchorElNav, setAnchorElNav] = useState(null);
+    const [value, setValue] = useState(0);
+    const [selectedLang, setSelectedLang] = useState(chosenLang.ENG)
 
+    const language = useSelector(state => state.products.language)
     const navigate = useNavigate();
 
     const handleChange = (event, newValue) => {
@@ -58,8 +50,30 @@ function Burger() {
 
     const navigation = (link) => {
         window.scrollTo(0, 0);
-        navigate(link);
+        if (link === '/tooted' || link === '/товары') {
+            return navigate('/products');
+        } else if (link === '/teenused' || link === '/услуги') {
+            return navigate('/services');
+        } else if (link === '/uudised' || link === '/новости') {
+            return navigate('/news');
+        } else if (link === '/esileht' || link === '/главная') {
+            return navigate('/');
+        }
+        else {
+            navigate(link);
+        }
     };
+
+    useEffect(() => {
+        const onChoose = () => {
+            for (const key in chosenLang) {
+                if (language === key) {
+                    setSelectedLang(chosenLang[key]);
+                }
+            }
+        }
+        onChoose()
+    }, [language])
 
     return (
         <AppBar position="static">
@@ -94,13 +108,13 @@ function Burger() {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
-                                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                            {selectedLang.map((link) => (
+                                <MenuItem key={link} onClick={handleCloseNavMenu}>
                                     <Typography
-                                        onClick={() => navigation(`/${page.link}`)}
+                                        onClick={() => navigation(`/${link.toLowerCase()}`)}
                                         textAlign="center"
                                     >
-                                        {page.name}
+                                        {link}
                                     </Typography>
                                 </MenuItem>
                             ))}
@@ -116,16 +130,16 @@ function Burger() {
                         >
                             <Tab
                                 onClick={() => navigation('/')}
-                                label="Home"
+                                label={selectedLang[0]}
                                 {...a11yProps(0)}
                             />
                             <Tab
                                 onClick={() => navigation('/products')}
-                                label="Products"
+                                label={selectedLang[1]}
                                 {...a11yProps(1)}
                             />
-                            <Tab label="Services" {...a11yProps(2)} />
-                            <Tab label="News" {...a11yProps(3)} />
+                            <Tab label={selectedLang[2]} {...a11yProps(2)} />
+                            <Tab label={selectedLang[3]} {...a11yProps(3)} />
                         </Tabs>
                     </Box>
                 </Toolbar>

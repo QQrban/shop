@@ -24,7 +24,6 @@ const ProdCategories = () => {
     const sortByCompany = (e, category) => {
         dispatch(filterByCompany(category.text.toLowerCase()));
         dispatch(filterItems());
-        console.log(e.target);
         document.querySelectorAll('.company').forEach(comp => comp.classList.remove('make-orange'))
         e.target.classList.contains(category.text.toLowerCase()) && e.target.classList.add('make-orange')
     };

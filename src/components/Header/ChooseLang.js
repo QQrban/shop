@@ -1,21 +1,24 @@
-import * as React from 'react';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Flag from 'react-world-flags';
+import { setLanguage } from '../../services/stateService';
+import { useSelector, useDispatch } from 'react-redux';
 
 export default function ChooseLang() {
-    const [age, setAge] = React.useState('');
+
+    const dispatch = useDispatch();
+    const language = useSelector(state => state.products.language)
 
     const handleChange = (event) => {
-        setAge(event.target.value);
+        dispatch(setLanguage(event.target.value))
     };
 
     return (
         <div>
             <FormControl sx={{ m: 1, minWidth: 105 }}>
                 <Select
-                    value={age}
+                    value={language}
                     onChange={handleChange}
                     displayEmpty
                     sx={{
@@ -24,7 +27,7 @@ export default function ChooseLang() {
                         '.MuiOutlinedInput-notchedOutline': { border: 0 },
                     }}
                 >
-                    <MenuItem value="">
+                    <MenuItem value="ENG">
                         <Flag
                             code={826}
                             height={16}
@@ -33,7 +36,7 @@ export default function ChooseLang() {
                         />
                         ENG
                     </MenuItem>
-                    <MenuItem value={1}>
+                    <MenuItem value="EE">
                         <Flag
                             code={233}
                             height={16}
@@ -42,7 +45,7 @@ export default function ChooseLang() {
                         />{' '}
                         EE
                     </MenuItem>
-                    <MenuItem value={2}>
+                    <MenuItem value="RU">
                         <Flag
                             code={643}
                             height={16}

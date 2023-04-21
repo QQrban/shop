@@ -1,13 +1,34 @@
-import { Box, Paper, Typography, Grid } from '@mui/material';
+import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import { Box, Paper, Typography, Grid } from '@mui/material';
 import TopTitle from './TopTitle';
 
+const chosenLang = {
+    ENG: ['News and Blog',],
+    EE: ['Uudised ja blogi'],
+    RU: ['Новости и блог'],
+};
+
 const NewsBlog = () => {
+    const [selectedLang, setSelectedLang] = useState(chosenLang.ENG);
+    const language = useSelector(state => state.products.language);
     const products = useSelector((state) => state.products.products);
+
+    useEffect(() => {
+        const onChoose = () => {
+            for (const key in chosenLang) {
+                if (language === key) {
+                    setSelectedLang(chosenLang[key]);
+                }
+            }
+        }
+        onChoose();
+    }, [language])
+
 
     return (
         <Box sx={{ mt: '60px' }}>
-            <TopTitle name={'News and Blog'} />
+            <TopTitle name={selectedLang} />
             <Grid sx={{ flexGrow: 1, mt: '50px' }} container>
                 <Grid item xs={12}>
                     <Grid

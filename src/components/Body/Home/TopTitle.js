@@ -1,8 +1,30 @@
+import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { Box, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
+const chosenLang = {
+    ENG: ['show all',],
+    EE: ['näita kõiki'],
+    RU: ['показать все'],
+};
+
 const TopTitle = ({ name }) => {
+    const [selectedLang, setSelectedLang] = useState(chosenLang.ENG);
+    const language = useSelector(state => state.products.language);
+
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const onChoose = () => {
+            for (const key in chosenLang) {
+                if (language === key) {
+                    setSelectedLang(chosenLang[key]);
+                }
+            }
+        }
+        onChoose();
+    }, [language])
 
     return (
         <Box
@@ -33,7 +55,7 @@ const TopTitle = ({ name }) => {
                     },
                 }}
             >
-                Show all
+                {selectedLang}
             </Button>
         </Box>
     );

@@ -1,10 +1,48 @@
+import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import img from '../../../img2.png';
+import img from '../../../img1.png';
+
+const chosenLang = {
+    ENG: {
+        title: 'We will exchange your phone ',
+        styled_title: 'on trade in',
+        text: 'Trade in your old phone for a new one with our exchange program.',
+        button: 'shop now'
+    },
+    EE: {
+        title: 'Pakume teile võimalust vahetada ',
+        styled_title: 'vahetada oma telefon uue vastu',
+        text: 'Vahetage oma vana telefon uue vastu meie vahetusprogrammi abil',
+        button: ' Loe rohkem'
+    },
+    RU: {
+        title: 'Мы предоставляем услугу ',
+        styled_title: 'обмена вашего телефона на новый',
+        text: 'Обменяйте свой старый телефон на новый в рамках нашей программы',
+        button: 'Подробнее'
+    },
+}
 
 const SecondaryPoster = () => {
+    const [selectedLang, setSelectedLang] = useState(chosenLang.ENG);
+
+    const language = useSelector(state => state.products.language);
+
+    useEffect(() => {
+        const onChoose = () => {
+            for (const key in chosenLang) {
+                if (language === key) {
+                    setSelectedLang(chosenLang[key]);
+                }
+            }
+        }
+        onChoose()
+    }, [language])
+
     return (
         <Box
             sx={{
@@ -45,8 +83,8 @@ const SecondaryPoster = () => {
                             fontWeight: 'bold',
                         }}
                     >
-                        We will exchange your
-                        <span style={{ color: 'orange' }}> phone</span> on trade in
+                        {selectedLang.title}
+                        <span style={{ color: 'orange' }}>{selectedLang.styled_title}</span>
                     </Typography>
                     <Typography
                         variant="p"
@@ -55,8 +93,7 @@ const SecondaryPoster = () => {
                             lineHeight: '24px',
                         }}
                     >
-                        We will exchange your equipment for a new one under the trade-in
-                        program
+                        {selectedLang.text}
                     </Typography>
                     <Button
                         className="shop-now"
@@ -66,7 +103,7 @@ const SecondaryPoster = () => {
                         }}
                         variant="contained"
                     >
-                        Learn more
+                        {selectedLang.button}
                     </Button>
                 </Box>
             </Paper>
