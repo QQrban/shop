@@ -3,8 +3,9 @@ import { useSelector } from 'react-redux';
 import ItemGrid from '../../Home/ItemGrid';
 
 const Catalogue = () => {
-    const catalogue = useSelector((state) => state.catalogue.catalogue);
     const filtered = useSelector((state) => state.catalogue.filteredItems);
+
+    if (!filtered) return;
     return (
         <Grid container>
             <Grid item xs={12}>
@@ -13,9 +14,9 @@ const Catalogue = () => {
                     justifyContent={{ md: 'flex-start', xs: 'center' }}
                     spacing={2}
                 >
-                    {catalogue?.length && filtered.length === 0
-                        ? catalogue.map((item) => <ItemGrid key={item.id} item={item} />)
-                        : filtered.map((item) => <ItemGrid key={item.id} item={item} />)}
+                    {filtered?.length
+                        ? filtered.map((item) => <ItemGrid key={item.id} item={item} />)
+                        : <div>No suitable products</div>}
                 </Grid>
             </Grid>
         </Grid>

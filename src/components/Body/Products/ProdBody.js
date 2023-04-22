@@ -4,16 +4,18 @@ import ProdFilters from './Filters/ProdFilters';
 import Catalogue from './Catalogue/Catalogue';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setCatalogue } from '../../../services/catalogueSlice';
+import { setCatalogue, setFilteredItems } from '../../../services/catalogueSlice';
 
 const ProdBody = () => {
     const dispatch = useDispatch();
+    const catalogue = useSelector((state) => state.catalogue.catalogue);
     const products = useSelector((state) => state.products.products);
 
     useEffect(() => {
         if (!products) return;
         dispatch(setCatalogue(products[0].all_products));
-    }, [dispatch, products]);
+        dispatch(setFilteredItems(catalogue));
+    }, [dispatch, products, catalogue]);
 
     return (
         <Box>

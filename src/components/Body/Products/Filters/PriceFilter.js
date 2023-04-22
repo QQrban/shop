@@ -14,6 +14,10 @@ const inputStyles = {
 };
 
 const PriceFilter = () => {
+    const sortByPrice = (e) => {
+        console.log(e.target.value);
+    }
+
     return (
         <Accordion>
             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
@@ -21,8 +25,8 @@ const PriceFilter = () => {
             </AccordionSummary>
             <AccordionDetails>
                 <Box sx={{ display: 'flex', gap: 1 }}>
-                    <InputBase sx={inputStyles} type="number" />
-                    <InputBase sx={inputStyles} type="number" />
+                    <InputBase onChange={sortByPrice} sx={inputStyles} type="number" />
+                    <InputBase onChange={sortByPrice} sx={inputStyles} type="number" />
                 </Box>
             </AccordionDetails>
         </Accordion>

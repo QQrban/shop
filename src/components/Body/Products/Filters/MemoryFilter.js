@@ -1,6 +1,6 @@
 import { Accordion, AccordionDetails, AccordionSummary } from "./AccordionStyle";
 import { Typography, Box, Slider } from "@mui/material";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const marks = [
     {
@@ -27,12 +27,9 @@ function valuetext(value) {
 
 const MemoryFilter = () => {
     const catalogue = useSelector(state => state.products.catalogue);
-    // const products = useSelector(state => state.products.products);
-    // const dispatch = useDispatch();
 
     const sortByMemory = (e) => {
         if (!catalogue) return
-        // const newCatalogue = products[0].all_products.filter(item => +item.memory >= e.target.value[0] && item.memory <= e.target.value[1]);
     }
 
     return (
