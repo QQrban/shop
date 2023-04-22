@@ -9,7 +9,8 @@ const catalogueSlice = createSlice({
             color: [],
             producer: '',
             year: [],
-            price: [],
+            minPrice: '',
+            maxPrice: '',
         },
     },
     reducers: {
@@ -29,6 +30,12 @@ const catalogueSlice = createSlice({
         addYear(state, action) {
             !state.filter.year.includes(action.payload) && state.filter.year.push(action.payload);
         },
+        setMinPrice(state, action) {
+            state.filter.minPrice = action.payload;
+        },
+        setMaxPrice(state, action) {
+            state.filter.maxPrice = action.payload;
+        },
         removeYear(state, action) {
             state.filter.year.splice(state.filter.year.indexOf(action.payload), 1);
         },
@@ -40,8 +47,9 @@ const catalogueSlice = createSlice({
             state.filteredItems = state.catalogue;
         },
         filterItems(state) {
-            const { color, producer, year } = state.filter;
+            const { color, producer, year, minPrice, maxPrice } = state.filter;
             let filteredItems = state.catalogue;
+
             if (color.length > 0) {
                 filteredItems = filteredItems.filter(item => color.includes(item.color));
             }
@@ -51,7 +59,11 @@ const catalogueSlice = createSlice({
             if (year.length > 0) {
                 filteredItems = filteredItems.filter(item => year.includes(item.year));
             }
+            if (minPrice.length > 0 && maxPrice.length > 0) {
+                filteredItems = filteredItems.filter(item => +item.price >= +minPrice && +item.price <= +maxPrice);
+            }
             state.filteredItems = filteredItems;
+
         },
     },
 });
@@ -65,6 +77,8 @@ export const {
     filterByCompany,
     addYear,
     removeYear,
+    setMinPrice,
+    setMaxPrice,
     showAll,
 } = catalogueSlice.actions;
 

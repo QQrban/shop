@@ -4,6 +4,8 @@ import {
     AccordionSummary,
 } from './AccordionStyle';
 import { Typography, Box, InputBase } from '@mui/material';
+import { setMinPrice, setMaxPrice, filterItems } from '../../../../services/catalogueSlice';
+import { useDispatch } from 'react-redux';
 
 const inputStyles = {
     maxWidth: 60,
@@ -14,8 +16,16 @@ const inputStyles = {
 };
 
 const PriceFilter = () => {
-    const sortByPrice = (e) => {
-        console.log(e.target.value);
+    const dispatch = useDispatch();
+
+    const sortByMinPrice = (e) => {
+        dispatch(setMinPrice(e.target.value));
+        dispatch(filterItems());
+    }
+
+    const sortByMaxPrice = (e) => {
+        dispatch(setMaxPrice(e.target.value));
+        dispatch(filterItems());
     }
 
     return (
@@ -25,8 +35,8 @@ const PriceFilter = () => {
             </AccordionSummary>
             <AccordionDetails>
                 <Box sx={{ display: 'flex', gap: 1 }}>
-                    <InputBase onChange={sortByPrice} sx={inputStyles} type="number" />
-                    <InputBase onChange={sortByPrice} sx={inputStyles} type="number" />
+                    <InputBase onKeyUp={sortByMinPrice} sx={inputStyles} type="number" />
+                    <InputBase onKeyUp={sortByMaxPrice} sx={inputStyles} type="number" />
                 </Box>
             </AccordionDetails>
         </Accordion>
