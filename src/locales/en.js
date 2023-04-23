@@ -32,7 +32,10 @@ const en = {
             button: 'learn more',
         },
         show_all: 'show all',
-        buttons: 'buy'
+        buttons: 'buy',
+        products: {
+            no_products: 'No suitable products'
+        }
     },
 };
 

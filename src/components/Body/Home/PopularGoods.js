@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Box } from '@mui/material';
 import Grid from '@mui/material/Grid';
@@ -16,8 +15,9 @@ const translations = {
 
 const PopularGoods = () => {
     const language = useSelector(state => state.products.language);
-    const products = useSelector((state) => state.products.products);
     const t = translations[language];
+
+    const products = useSelector((state) => state.products.products);
 
     return (
         <Box sx={{ mt: '60px' }}>

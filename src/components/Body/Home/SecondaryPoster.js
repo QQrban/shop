@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -16,7 +15,6 @@ const translations = {
 };
 
 const SecondaryPoster = () => {
-
     const language = useSelector(state => state.products.language);
     const t = translations[language];
 

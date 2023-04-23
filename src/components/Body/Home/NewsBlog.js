@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Box, Paper, Typography, Grid } from '@mui/material';
 import TopTitle from './TopTitle';
@@ -12,12 +11,10 @@ const translations = {
     ru,
 };
 
-
 const NewsBlog = () => {
     const language = useSelector(state => state.products.language);
     const products = useSelector((state) => state.products.products);
     const t = translations[language];
-
 
     return (
         <Box sx={{ mt: '60px' }}>

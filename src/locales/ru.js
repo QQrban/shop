@@ -32,7 +32,10 @@ const ru = {
             button: 'подробнее',
         },
         show_all: 'показать все',
-        buttons: 'купить'
+        buttons: 'купить',
+        products: {
+            no_products: 'Подходящих товаров нет'
+        }
     },
 }
 

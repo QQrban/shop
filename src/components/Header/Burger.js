@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import AppBar from '@mui/material/AppBar';
@@ -22,14 +22,6 @@ const translations = {
     ee,
     ru,
 };
-
-
-const chosenLang = {
-    ENG: ['Home', 'Products', 'Services', 'News',],
-    EE: ['Esileht', 'Tooted', 'Teenused', 'Uudised'],
-    RU: ['Главная', 'Товары', 'Услуги', 'Новости'],
-};
-
 
 function a11yProps(index) {
     return {

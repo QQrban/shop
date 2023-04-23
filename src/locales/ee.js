@@ -32,7 +32,10 @@ const ee = {
             button: 'loe rohkem',
         },
         show_all: 'näita kõiki',
-        buttons: 'osta'
+        buttons: 'osta',
+        products: {
+            no_products: 'Sobivaid tooteid pole'
+        }
     },
 }
 
