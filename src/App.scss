@@ -36,7 +36,8 @@ img {
 
 body {
     background-color: #1976d211;
-    overflow-x: hidden;
+    overflow: auto !important;
+    padding-right: 0 !important;
 }
 
 main {

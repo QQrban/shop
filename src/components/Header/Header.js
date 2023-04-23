@@ -16,13 +16,24 @@ import { Container } from '@mui/material';
 import ChooseLang from './ChooseLang';
 import Burger from './Burger';
 import { setOpenCart } from '../../services/stateService';
+import en from '../../locales/en';
+import ee from '../../locales/ee';
+import ru from '../../locales/ru';
+
+const translations = {
+    en,
+    ee,
+    ru,
+};
 
 export default function Header() {
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
 
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
     const cart = useSelector((state) => state.cart.cart);
+    const language = useSelector(state => state.products.language);
     const dispatch = useDispatch();
+    const t = translations[language];
 
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);
@@ -57,7 +68,7 @@ export default function Header() {
                         <ShoppingBasketIcon />
                     </Badge>
                 </IconButton>
-                <p>Cart</p>
+                <p>{t.header.icons.cart}</p>
             </MenuItem>
             <MenuItem>
                 <IconButton
@@ -69,7 +80,7 @@ export default function Header() {
                 >
                     <AccountCircle />
                 </IconButton>
-                <p>Profile</p>
+                <p>{t.header.icons.profile}</p>
             </MenuItem>
             <MenuItem>
                 <IconButton
@@ -81,7 +92,7 @@ export default function Header() {
                 >
                     <FavoriteBorderIcon />
                 </IconButton>
-                <p>Wishes</p>
+                <p>{t.header.icons.wishes}</p>
             </MenuItem>
         </Menu>
     );

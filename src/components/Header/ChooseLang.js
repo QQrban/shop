@@ -12,6 +12,7 @@ export default function ChooseLang() {
 
     const handleChange = (event) => {
         dispatch(setLanguage(event.target.value))
+        console.log(language);
     };
 
     return (
@@ -27,7 +28,7 @@ export default function ChooseLang() {
                         '.MuiOutlinedInput-notchedOutline': { border: 0 },
                     }}
                 >
-                    <MenuItem value="ENG">
+                    <MenuItem value="en">
                         <Flag
                             code={826}
                             height={16}
@@ -36,7 +37,7 @@ export default function ChooseLang() {
                         />
                         ENG
                     </MenuItem>
-                    <MenuItem value="EE">
+                    <MenuItem value="ee">
                         <Flag
                             code={233}
                             height={16}
@@ -45,7 +46,7 @@ export default function ChooseLang() {
                         />{' '}
                         EE
                     </MenuItem>
-                    <MenuItem value="RU">
+                    <MenuItem value="ru">
                         <Flag
                             code={643}
                             height={16}

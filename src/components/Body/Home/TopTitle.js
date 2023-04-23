@@ -2,29 +2,21 @@ import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Box, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import en from '../../../locales/en';
+import ee from '../../../locales/ee';
+import ru from '../../../locales/ru';
 
-const chosenLang = {
-    ENG: ['show all',],
-    EE: ['näita kõiki'],
-    RU: ['показать все'],
+const translations = {
+    en,
+    ee,
+    ru,
 };
 
 const TopTitle = ({ name }) => {
-    const [selectedLang, setSelectedLang] = useState(chosenLang.ENG);
     const language = useSelector(state => state.products.language);
+    const t = translations[language];
 
     const navigate = useNavigate();
-
-    useEffect(() => {
-        const onChoose = () => {
-            for (const key in chosenLang) {
-                if (language === key) {
-                    setSelectedLang(chosenLang[key]);
-                }
-            }
-        }
-        onChoose();
-    }, [language])
 
     return (
         <Box
@@ -55,7 +47,7 @@ const TopTitle = ({ name }) => {
                     },
                 }}
             >
-                {selectedLang}
+                {t.main.show_all}
             </Button>
         </Box>
     );

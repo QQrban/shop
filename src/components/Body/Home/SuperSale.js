@@ -4,33 +4,25 @@ import { Box } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import TopTitle from './TopTitle';
 import ItemGrid from './ItemGrid';
+import en from '../../../locales/en';
+import ee from '../../../locales/ee';
+import ru from '../../../locales/ru';
 
-const chosenLang = {
-    ENG: ['Super Sale',],
-    EE: ['Mega Müük'],
-    RU: ['Супер Скидка'],
+const translations = {
+    en,
+    ee,
+    ru,
 };
 
 const SuperSale = () => {
-    const [selectedLang, setSelectedLang] = useState(chosenLang.ENG);
     const language = useSelector(state => state.products.language);
     const products = useSelector((state) => state.products.products);
-
-    useEffect(() => {
-        const onChoose = () => {
-            for (const key in chosenLang) {
-                if (language === key) {
-                    setSelectedLang(chosenLang[key]);
-                }
-            }
-        }
-        onChoose();
-    }, [language])
+    const t = translations[language];
 
 
     return (
         <Box sx={{ mt: '80px' }}>
-            <TopTitle name={selectedLang} />
+            <TopTitle name={t.main.section_titles.super_sale} />
             <Grid sx={{ flexGrow: 1, mt: '50px' }} container>
                 <Grid item xs={12}>
                     <Grid

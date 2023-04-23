@@ -3,7 +3,7 @@ import { createAction, createReducer } from '@reduxjs/toolkit';
 const initialState = {
     products: null,
     openCart: false,
-    language: 'ENG'
+    language: 'en'
 };
 
 export const setOpenCart = createAction('setOpenCart');

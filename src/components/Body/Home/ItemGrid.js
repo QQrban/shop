@@ -5,16 +5,19 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { addItem } from '../../../services/cartSlice';
+import en from '../../../locales/en';
+import ee from '../../../locales/ee';
+import ru from '../../../locales/ru';
 
-const chosenLang = {
-    ENG: ['buy',],
-    EE: ['osta'],
-    RU: ['купить'],
+const translations = {
+    en,
+    ee,
+    ru,
 };
 
 const ItemGrid = ({ item }) => {
-    const [selectedLang, setSelectedLang] = useState(chosenLang.ENG);
     const language = useSelector(state => state.products.language);
+    const t = translations[language];
 
     const dispatch = useDispatch();
     const cart = useSelector((state) => state.cart.cart);
@@ -39,17 +42,6 @@ const ItemGrid = ({ item }) => {
         localStorage.setItem('cart', JSON.stringify(cart));
         localStorage.setItem('price', JSON.stringify(price));
     }, [cart, price]);
-
-    useEffect(() => {
-        const onChoose = () => {
-            for (const key in chosenLang) {
-                if (language === key) {
-                    setSelectedLang(chosenLang[key]);
-                }
-            }
-        }
-        onChoose();
-    }, [language])
 
     return (
         <Grid item>
@@ -143,7 +135,7 @@ const ItemGrid = ({ item }) => {
                                 }}
                                 variant="contained"
                             >
-                                {selectedLang}
+                                {t.main.buttons}
                             </Button>
                         </Box>
                     </Box>
