@@ -11,6 +11,8 @@ const catalogueSlice = createSlice({
             year: [],
             minPrice: '',
             maxPrice: '',
+            memory: [],
+            search: '',
         },
     },
     reducers: {
@@ -24,11 +26,17 @@ const catalogueSlice = createSlice({
             !state.filter.color.includes(action.payload) && state.filter.color.push(action.payload);
             state.filteredItems = state.catalogue.filter(item => state.filter.color.includes(item.color))
         },
+        setMemory(state, action) {
+            state.filter.memory = action.payload;
+        },
         removeColor(state, action) {
             state.filter.color.splice(state.filter.color.indexOf(action.payload), 1);
         },
         addYear(state, action) {
             !state.filter.year.includes(action.payload) && state.filter.year.push(action.payload);
+        },
+        searchItem(state, action) {
+            state.filter.search = action.payload;
         },
         setMinPrice(state, action) {
             state.filter.minPrice = action.payload;
@@ -47,7 +55,7 @@ const catalogueSlice = createSlice({
             state.filteredItems = state.catalogue;
         },
         filterItems(state) {
-            const { color, producer, year, minPrice, maxPrice } = state.filter;
+            const { color, producer, year, minPrice, maxPrice, memory, search } = state.filter;
             let filteredItems = state.catalogue;
 
             if (color.length > 0) {
@@ -61,6 +69,12 @@ const catalogueSlice = createSlice({
             }
             if (minPrice.length > 0 && maxPrice.length > 0) {
                 filteredItems = filteredItems.filter(item => +item.price >= +minPrice && +item.price <= +maxPrice);
+            }
+            if (memory.length > 0) {
+                filteredItems = filteredItems.filter(item => +item.memory >= +memory[0] && +item.memory <= +memory[1])
+            }
+            if (search.length > 2) {
+                filteredItems = filteredItems.filter(item => item.name.toLowerCase().includes(search));
             }
             state.filteredItems = filteredItems;
 
@@ -77,8 +91,10 @@ export const {
     filterByCompany,
     addYear,
     removeYear,
+    searchItem,
     setMinPrice,
     setMaxPrice,
+    setMemory,
     showAll,
 } = catalogueSlice.actions;
 

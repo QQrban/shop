@@ -1,6 +1,7 @@
+import { useDispatch } from "react-redux";
 import { Accordion, AccordionDetails, AccordionSummary } from "./AccordionStyle";
 import { Typography, Box, Slider } from "@mui/material";
-import { useSelector } from "react-redux";
+import { setMemory, filterItems } from "../../../../services/catalogueSlice";
 
 const marks = [
     {
@@ -26,10 +27,12 @@ function valuetext(value) {
 }
 
 const MemoryFilter = () => {
-    const catalogue = useSelector(state => state.products.catalogue);
+
+    const dispatch = useDispatch();
 
     const sortByMemory = (e) => {
-        if (!catalogue) return
+        dispatch(setMemory(e.target.value));
+        dispatch(filterItems());
     }
 
     return (

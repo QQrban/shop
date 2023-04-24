@@ -12,7 +12,6 @@ export default function ChooseLang() {
 
     const handleChange = (event) => {
         dispatch(setLanguage(event.target.value))
-        console.log(language);
     };
 
     return (
