@@ -16,24 +16,18 @@ import { Container } from '@mui/material';
 import ChooseLang from './ChooseLang';
 import Burger from './Burger';
 import { setOpenCart } from '../../services/stateService';
-import en from '../../locales/en';
-import ee from '../../locales/ee';
-import ru from '../../locales/ru';
-
-const translations = {
-    en,
-    ee,
-    ru,
-};
+import { useTranslation } from '../../translate';
 
 export default function Header() {
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
 
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
     const cart = useSelector((state) => state.cart.cart);
-    const language = useSelector(state => state.products.language);
+
     const dispatch = useDispatch();
-    const t = translations[language];
+
+    const language = useSelector((state) => state.products.language);
+    const t = useTranslation(language);
 
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);

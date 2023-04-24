@@ -34,7 +34,22 @@ const ru = {
         show_all: 'показать все',
         buttons: 'купить',
         products: {
-            no_products: 'Подходящих товаров нет'
+            filters: {
+                search_placeholder: `Поиск в ReactShop`,
+                price: 'Цена',
+                release_year: 'Год выпуска',
+                internal_memory: 'Память',
+                color: {
+                    name: 'Цвет',
+                    colors: [
+                        { label: 'Черный', value: 'black' },
+                        { label: 'Серебряный', value: 'silver' },
+                        { label: 'Белый', value: 'white' },
+                        { label: 'Другие', value: 'other' },
+                    ],
+                },
+            },
+            no_products: 'Подходящих товаров нет',
         }
     },
 }

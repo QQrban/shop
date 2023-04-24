@@ -3,21 +3,14 @@ import { Box } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import TopTitle from './TopTitle';
 import ItemGrid from './ItemGrid';
-import en from '../../../locales/en';
-import ee from '../../../locales/ee';
-import ru from '../../../locales/ru';
-
-const translations = {
-    en,
-    ee,
-    ru,
-};
+import { useTranslation } from '../../../translate';
 
 const NewGoods = () => {
 
-    const language = useSelector(state => state.products.language);
     const products = useSelector((state) => state.products.products);
-    const t = translations[language];
+
+    const language = useSelector((state) => state.products.language);
+    const t = useTranslation(language);
 
     return (
         <Box sx={{ mt: '60px' }}>

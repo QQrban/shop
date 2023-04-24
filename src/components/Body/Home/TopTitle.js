@@ -1,19 +1,11 @@
 import { useSelector } from 'react-redux';
 import { Box, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import en from '../../../locales/en';
-import ee from '../../../locales/ee';
-import ru from '../../../locales/ru';
-
-const translations = {
-    en,
-    ee,
-    ru,
-};
+import { useTranslation } from '../../../translate';
 
 const TopTitle = ({ name }) => {
-    const language = useSelector(state => state.products.language);
-    const t = translations[language];
+    const language = useSelector((state) => state.products.language);
+    const t = useTranslation(language);
 
     const navigate = useNavigate();
 

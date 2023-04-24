@@ -5,19 +5,11 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { addItem } from '../../../services/cartSlice';
-import en from '../../../locales/en';
-import ee from '../../../locales/ee';
-import ru from '../../../locales/ru';
-
-const translations = {
-    en,
-    ee,
-    ru,
-};
+import { useTranslation } from '../../../translate';
 
 const ItemGrid = ({ item }) => {
-    const language = useSelector(state => state.products.language);
-    const t = translations[language];
+    const language = useSelector((state) => state.products.language);
+    const t = useTranslation(language);
 
     const dispatch = useDispatch();
     const cart = useSelector((state) => state.cart.cart);

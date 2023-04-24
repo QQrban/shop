@@ -4,19 +4,11 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import img from '../../../img2.png';
-import en from '../../../locales/en';
-import ee from '../../../locales/ee';
-import ru from '../../../locales/ru';
-
-const translations = {
-    en,
-    ee,
-    ru,
-};
+import { useTranslation } from '../../../translate';
 
 const SecondaryPoster = () => {
-    const language = useSelector(state => state.products.language);
-    const t = translations[language];
+    const language = useSelector((state) => state.products.language);
+    const t = useTranslation(language);
 
     return (
         <Box

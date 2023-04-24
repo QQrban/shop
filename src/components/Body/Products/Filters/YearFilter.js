@@ -1,9 +1,9 @@
+import { useSelector, useDispatch } from 'react-redux';
 import {
     Accordion,
     AccordionDetails,
     AccordionSummary,
 } from './AccordionStyle';
-import { useDispatch } from 'react-redux';
 import { Typography } from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -12,9 +12,14 @@ import {
     removeYear,
     filterItems,
 } from '../../../../services/catalogueSlice';
+import { useTranslation } from '../../../../translate';
 
 const YearFilter = () => {
+
     const dispatch = useDispatch();
+
+    const language = useSelector((state) => state.products.language);
+    const t = useTranslation(language);
 
     const sortByYear = (e) => {
         if (e.target.checked) {
@@ -28,7 +33,7 @@ const YearFilter = () => {
     return (
         <Accordion>
             <AccordionSummary>
-                <Typography>Release year</Typography>
+                <Typography>{t.main.products.filters.release_year}</Typography>
             </AccordionSummary>
             <AccordionDetails sx={{ display: 'flex', flexDirection: 'column' }}>
                 {[2020, 2021, 2022, 2023].map((year, i) => (

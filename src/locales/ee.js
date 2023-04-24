@@ -34,7 +34,22 @@ const ee = {
         show_all: 'näita kõiki',
         buttons: 'osta',
         products: {
-            no_products: 'Sobivaid tooteid pole'
+            filters: {
+                search_placeholder: `Otsing ReactShop'is`,
+                price: 'Hind',
+                release_year: 'Väljalaskeaasta',
+                internal_memory: 'Sisemälu',
+                color: {
+                    name: 'Värv',
+                    colors: [
+                        { label: 'Must', value: 'black' },
+                        { label: 'Hõbe', value: 'silver' },
+                        { label: 'Valge', value: 'white' },
+                        { label: 'Muud', value: 'other' },
+                    ],
+                },
+            },
+            no_products: 'Sobivaid tooteid pole',
         }
     },
 }

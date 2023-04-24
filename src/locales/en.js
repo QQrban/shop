@@ -34,7 +34,22 @@ const en = {
         show_all: 'show all',
         buttons: 'buy',
         products: {
-            no_products: 'No suitable products'
+            filters: {
+                search_placeholder: 'Search in ReactShop',
+                price: 'Price',
+                release_year: 'Release year',
+                internal_memory: 'Internal memory',
+                color: {
+                    name: 'Color',
+                    colors: [
+                        { label: 'Black', value: 'black' },
+                        { label: 'Silver', value: 'silver' },
+                        { label: 'White', value: 'white' },
+                        { label: 'Other', value: 'other' },
+                    ],
+                },
+            },
+            no_products: 'No suitable products',
         }
     },
 };

@@ -1,21 +1,13 @@
 import { Grid, Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
 import ItemGrid from '../../Home/ItemGrid';
-import en from '../../../../locales/en';
-import ee from '../../../../locales/ee';
-import ru from '../../../../locales/ru';
-
-const translations = {
-    en,
-    ee,
-    ru,
-};
+import { useTranslation } from '../../../../translate';
 
 const Catalogue = () => {
     const filtered = useSelector((state) => state.catalogue.filteredItems);
 
     const language = useSelector(state => state.products.language);
-    const t = translations[language];
+    const t = useTranslation(language);
 
     if (!filtered) return;
     return (

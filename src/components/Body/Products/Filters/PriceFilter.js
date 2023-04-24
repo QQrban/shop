@@ -1,11 +1,21 @@
+import { useSelector, useDispatch } from 'react-redux';
 import {
     Accordion,
     AccordionDetails,
     AccordionSummary,
 } from './AccordionStyle';
-import { Typography, Box, InputBase } from '@mui/material';
-import { setMinPrice, setMaxPrice, filterItems } from '../../../../services/catalogueSlice';
-import { useDispatch } from 'react-redux';
+import {
+    Typography,
+    Box,
+    InputBase
+} from '@mui/material';
+import {
+    setMinPrice,
+    setMaxPrice,
+    filterItems
+} from '../../../../services/catalogueSlice';
+import { useTranslation } from '../../../../translate';
+
 
 const inputStyles = {
     maxWidth: 60,
@@ -17,6 +27,9 @@ const inputStyles = {
 
 const PriceFilter = () => {
     const dispatch = useDispatch();
+
+    const language = useSelector((state) => state.products.language);
+    const t = useTranslation(language);
 
     const sortByMinPrice = (e) => {
         dispatch(setMinPrice(e.target.value));
@@ -31,7 +44,7 @@ const PriceFilter = () => {
     return (
         <Accordion>
             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                <Typography>Price</Typography>
+                <Typography>{t.main.products.filters.price}</Typography>
             </AccordionSummary>
             <AccordionDetails>
                 <Box sx={{ display: 'flex', gap: 1 }}>

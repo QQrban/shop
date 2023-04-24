@@ -1,7 +1,8 @@
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Accordion, AccordionDetails, AccordionSummary } from "./AccordionStyle";
 import { Typography, Box, Slider } from "@mui/material";
 import { setMemory, filterItems } from "../../../../services/catalogueSlice";
+import { useTranslation } from '../../../../translate';
 
 const marks = [
     {
@@ -28,6 +29,9 @@ function valuetext(value) {
 
 const MemoryFilter = () => {
 
+    const language = useSelector((state) => state.products.language);
+    const t = useTranslation(language);
+
     const dispatch = useDispatch();
 
     const sortByMemory = (e) => {
@@ -38,7 +42,7 @@ const MemoryFilter = () => {
     return (
         <Accordion>
             <AccordionSummary >
-                <Typography>Internal memory</Typography>
+                <Typography>{t.main.products.filters.internal_memory}</Typography>
             </AccordionSummary>
             <AccordionDetails>
                 <Box >

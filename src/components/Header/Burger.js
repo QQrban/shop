@@ -13,15 +13,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-import en from '../../locales/en';
-import ee from '../../locales/ee';
-import ru from '../../locales/ru';
-
-const translations = {
-    en,
-    ee,
-    ru,
-};
+import { useTranslation } from '../../translate';
 
 function a11yProps(index) {
     return {
@@ -36,8 +28,8 @@ function Burger() {
 
     const navigate = useNavigate();
 
-    const language = useSelector(state => state.products.language);
-    const t = translations[language];
+    const language = useSelector((state) => state.products.language);
+    const t = useTranslation(language);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
