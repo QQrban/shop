@@ -133,7 +133,7 @@ function Burger() {
                                 {...a11yProps(1)}
                             />
                             <Tab label={t.header.navigation.services} {...a11yProps(2)} />
-                            <Tab label={t.header.navigation.news} {...a11yProps(3)} />
+                            <Tab onClick={() => navigate('/news')} label={t.header.navigation.news} {...a11yProps(3)} />
                         </Tabs>
                     </Box>
                 </Toolbar>

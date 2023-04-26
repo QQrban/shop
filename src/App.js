@@ -1,12 +1,13 @@
 import './App.scss';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import HomePage from './pages/HomePage';
 import Header from './components/Header/Header';
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Cart from './components/Body/Cart/Cart';
+import HomePage from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
+import NewsPage from './pages/NewsPage';
 import { getAllProducts } from './services/apiService';
 import { setProducts } from './services/stateService';
 
@@ -25,6 +26,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/products" element={<ProductsPage />} />
+                <Route path="/news" element={<NewsPage />} />
             </Routes>
             <Cart />
             <Footer />

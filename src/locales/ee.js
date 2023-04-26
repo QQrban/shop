@@ -50,6 +50,9 @@ const ee = {
                 },
             },
             no_products: 'Sobivaid tooteid pole',
+        },
+        news: {
+            header: 'Värsked Uudised'
         }
     },
 }

@@ -82,64 +82,176 @@
         "id": "12"
       }
     ],
-    "news": [
-      {
-        "title": "New Smartphone Model XYZ-5000 Released with Advanced Features",
-        "author": "TechGuru123",
-        "date": "2023-03-16",
-        "description": "The latest smartphone model XYZ-5000 has been released by a leading tech company. It comes with advanced features such as a triple-lens camera, 5G connectivity, and improved battery life.",
-        "img": "https://images.unsplash.com/photo-1494366222322-387658a1a976?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNtYXJ0cGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "id": "991"
-      },
-      {
-        "title": "Smart Home Devices Becoming More Popular Among Homeowners",
-        "author": "HomeTechExpert",
-        "date": "2023-03-15",
-        "description": "The demand for smart home devices is on the rise, with homeowners opting for smart thermostats, smart security systems, and other connected appliances to enhance their home automation and convenience.",
-        "img": "https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c21hcnQlMjBob21lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "id": "992"
-      },
-      {
-        "title": "New Gaming Console XYZ-PlayStation 6 Set to Launch Next Month",
-        "author": "GamingGeek89",
-        "date": "2023-03-14",
-        "description": "Gaming enthusiasts are eagerly anticipating the launch of the next-generation gaming console XYZ-PlayStation 6, which promises improved graphics, faster performance, and a vast library of games.",
-        "img": "https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29uc29sZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        "id": "993"
-      },
-      {
-        "title": "Latest Smart TV Model ABC-55UHD Receives Rave Reviews for its Picture Quality",
-        "author": "TVTechReviewer",
-        "date": "2023-03-13",
-        "description": "The newly released smart TV model ABC-55UHD has been praised for its stunning picture quality, high resolution, and smart features, making it a top choice among TV enthusiasts.",
-        "img": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c21hcnQlMjB0dnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        "id": "994"
-      },
-      {
-        "title": "New Wireless Earbuds XYZ-Earbuds Pro Launched with Noise-Cancellation Feature",
-        "author": "AudioTechEnthusiast",
-        "date": "2023-03-12",
-        "description": "The latest wireless earbuds model XYZ-Earbuds Pro has been launched, featuring active noise-cancellation technology, long battery life, and superior sound quality for an immersive listening experience.",
-        "img": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWFyYnVkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        "id": "995"
-      },
-      {
-        "title": "Robot Vacuum Cleaners Gain Popularity for Hassle-Free Cleaning",
-        "author": "HomeCleaningHacks",
-        "date": "2023-03-11",
-        "description": "Robot vacuum cleaners are becoming increasingly popular among busy households for their convenience and efficiency in keeping homes clean with minimal effort. The latest models offer advanced features like smart mapping and voice control.",
-        "img": "https://images.unsplash.com/photo-1558317374-067fb5f30001?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmFjdXVtJTIwY2xlYW5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        "id": "996"
-      },
-      {
-        "title": "New Wearable Fitness Tracker ABC-Fit Released with Health Monitoring Features",
-        "author": "FitnessTechEnthusiast",
-        "date": "2023-03-10",
-        "description": "The latest wearable fitness tracker model ABC-Fit has hit the market, boasting health monitoring features such as heart rate monitoring, sleep tracking, and activity tracking to help users achieve their fitness goals.",
-        "img": "https://images.unsplash.com/photo-1557935728-e6d1eaabe558?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZpdG5lc3MlMjB0cmFja2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "id": "997"
-      }
-    ],
+    "news": {
+      "en": [
+        {
+          "id": "555",
+          "title": "New iPhone 14 breaks sales records",
+          "description": "Apple's latest iPhone 14 has been a massive success, breaking sales records within the first week of its release. The new model features an improved camera, faster processor, and a sleek design that has captured the attention of consumers worldwide.",
+          "img": "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGlwaG9uZSUyMDE0fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "556",
+          "title": "Samsung Galaxy S23: A sneak peek at the upcoming flagship",
+          "description": "Samsung has released a teaser for its upcoming Galaxy S23, revealing exciting new features such as an under-display camera and enhanced battery life. Industry insiders expect the device to compete directly with Apple's latest iPhone.",
+          "img": "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Ftc3VuZyUyMGdhbGF4eSUyMHMyM3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "557",
+          "title": "Google Pixel 7 introduces revolutionary AI features",
+          "description": "Google's newest smartphone, the Pixel 7, is set to launch with advanced AI features that promise to improve the user experience significantly. Users can expect better voice recognition, real-time translation, and smarter image processing.",
+          "img": "https://images.unsplash.com/photo-1587840181242-bf05eb933bbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z29vZ2xlJTIwcGl4ZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "558",
+          "title": "OnePlus 10: The budget-friendly smartphone to watch",
+          "description": "The upcoming OnePlus 10 is generating buzz for its impressive specifications and competitive pricing. With features like a 120Hz display and a powerful Snapdragon processor, the OnePlus 10 is poised to challenge the dominance of higher-priced flagship devices.",
+          "img": "https://images.unsplash.com/photo-1591531040045-f67662954f54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b25lcGx1cyUyMDEwfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "559",
+          "title": "Sony Xperia 6: Impressive camera capabilities",
+          "description": "Sony's upcoming Xperia 6 smartphone is rumored to feature a groundbreaking camera system, utilizing the company's expertise in imaging technology. The device is expected to offer exceptional low-light performance and high-resolution photography.",
+          "img": "https://images.unsplash.com/photo-1657732214333-697a115ba263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29ueSUyMHhwZXJpYXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "561",
+          "title": "LG teases its return to the smartphone market",
+          "description": "After a brief hiatus, LG is hinting at a possible return to the smartphone industry with a new device in development. Insiders speculate that the company may be working on a foldable phone to compete with Samsung's Galaxy Z series.",
+          "img": "https://images.unsplash.com/photo-1524856076870-0d765c831d68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8TEclMjBwaG9uZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "562",
+          "title": "Motorola Razr 3: The classic flip phone gets a modern makeover",
+          "description": "Motorola is set to release the Razr 3, a modernized version of its iconic flip phone. The new model will maintain its classic form factor while incorporating a foldable OLED display, 5G connectivity, and a powerful Snapdragon chipset.",
+          "img": "https://images.unsplash.com/photo-1572069438926-cb9e0a5806d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8TW90b3JvbGF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "563",
+          "title": "Xiaomi Mi 12: A powerhouse with a competitive price",
+          "description": "Chinese manufacturer Xiaomi is gearing up to launch its Mi 12 smartphone, boasting flagship-level specifications at a mid-range price. The device will feature a 120Hz display, a powerful Snapdragon chipset, and an impressive camera system.",
+          "img": "https://images.unsplash.com/photo-1586790584169-41fda9df2be8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8eGlhb21pJTIwbWl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "564",
+          "title": "Nokia reveals its first foldable smartphone",
+          "description": "Nokia has unveiled its first-ever foldable smartphone, joining the ranks of Samsung, Motorola, and other manufacturers. The device features a sleek design, durable build quality, and cutting-edge technology, signaling Nokia's commitment to innovation.",
+          "img": "https://images.unsplash.com/photo-1634042148057-32603ec95d95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBob25lJTIwZmxpcHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        }
+      ],
+      "ru": [
+        {
+          "id": "555",
+          "title": "Новый iPhone 14 бьет рекорды продаж",
+          "description": "Последняя модель iPhone 14 от Apple стала огромным успехом, побив рекорды продаж в первую неделю после выпуска. Новая модель оснащена улучшенной камерой, более быстрым процессором и элегантным дизайном, который привлек внимание потребителей по всему миру.",
+          "img": "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGlwaG9uZSUyMDE0fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "556",
+          "title": "Samsung Galaxy S23: предварительный просмотр грядущего флагмана",
+          "description": "Samsung выпустила тизер своего предстоящего Galaxy S23, представив захватывающие новые функции, такие как камера под дисплеем и улучшенное время работы от аккумулятора. Эксперты отрасли ожидают, что устройство будет конкурировать напрямую с последним iPhone от Apple.",
+          "img": "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Ftc3VuZyUyMGdhbGF4eSUyMHMyM3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "557",
+          "title": "Google Pixel 7 представляет революционные функции искусственного интеллекта",
+          "description": "Новейший смартфон от Google, Pixel 7, готовится к запуску с передовыми функциями искусственного интеллекта, которые обещают значительно улучшить пользовательский опыт. Пользователи могут ожидать лучшего распознавания голоса, перевода в реальном времени и умной обработки изображений.",
+          "img": "https://images.unsplash.com/photo-1596742578443-7682ef5251cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z29vZ2xlJTIwcGl4ZWwlMjA3fGVuf"
+        },
+        {
+          "id": "558",
+          "title": "OnePlus 10: бюджетный смартфон, на который стоит обратить внимание",
+          "description": "Предстоящий OnePlus 10 привлекает внимание своими впечатляющими характеристиками и конкурентоспособной ценой. Обладая такими функциями, как дисплей с частотой обновления 120 Гц и мощный процессор Snapdragon, OnePlus 10 готов бросить вызов доминированию более дорогих флагманских устройств.",
+          "img": "https://images.unsplash.com/photo-1658321466969-1c45400bb947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b25lcGx1cyUyMDl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "559",
+          "title": "Sony Xperia 6: впечатляющие возможности камеры",
+          "description": "Грядущий смартфон Sony Xperia 6, по слухам, будет оснащен новаторской системой камер, использующей опыт компании в области технологий обработки изображений. Ожидается, что устройство будет предлагать исключительное качество съемки при слабом освещении и высокое разрешение фотографий.",
+          "img": "https://images.unsplash.com/photo-1657732214333-697a115ba263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29ueSUyMHhwZXJpYXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "561",
+          "title": "LG намекает на возвращение на рынок смартфонов",
+          "description": "После небольшого перерыва LG намекает на возможное возвращение в индустрию смартфонов с разработкой нового устройства. По мнению экспертов, компания может работать над гибким телефоном для конкуренции с серией Galaxy Z от Samsung.",
+          "img": "https://images.unsplash.com/photo-1524856076870-0d765c831d68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8TEclMjBwaG9uZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "562",
+          "title": "Motorola Razr 3: классический раскладушка получает современное обновление",
+          "description": "Motorola готовится выпустить Razr 3, модернизированную версию своего знаменитого телефона-раскладушки. Новая модель сохранит классическую форму корпуса, добавив в нее гибкий OLED-дисплей, поддержку сетей 5G и мощный чипсет Snapdragon.",
+          "img": "https://images.unsplash.com/photo-1572069438926-cb9e0a5806d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8TW90b3JvbGF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "563",
+          "title": "Xiaomi Mi 12: мощный смартфон с конкурентоспособной ценой",
+          "description": "Китайский производитель Xiaomi готовится к запуску смартфона Mi 12, который предлагает характеристики флагмана по средней цене. Устройство будет оснащено дисплеем с частотой обновления 120 Гц, мощным чипсетом Snapdragon и впечатляющей системой камер.",
+          "img": "https://images.unsplash.com/photo-1586790584169-41fda9df2be8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8eGlhb21pJTIwbWl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "564",
+          "title": "Nokia представляет свой первый смартфон с гибким экраном",
+          "description": "Nokia представила свой первый смартфон с гибким экраном, присоединившись к рядам Samsung, Motorola и других производителей. Устройство отличается элегантным дизайном, прочным корпусом и передовыми технологиями, подтверждая приверженность Nokia инновациям.",
+          "img": "https://images.unsplash.com/photo-1634042148057-32603ec95d95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBob25lJTIwZmxpcHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        }
+      ],
+      "ee": [
+        {
+          "id": "555",
+          "title": "Uus iPhone 14 purustab müügirekordeid",
+          "description": "Apple'i uusim iPhone 14 on olnud tohutu edu, purustades müügirekordeid juba esimese nädala jooksul pärast väljaandmist. Uus mudel sisaldab paremat kaamerat, kiiremat protsessorit ja stiilset disaini, mis on köitnud tarbijaid kogu maailmas.",
+          "img": "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGlwaG9uZSUyMDE0fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "556",
+          "title": "Samsung Galaxy S23: pilguheit tulevasele lipulaevale",
+          "description": "Samsung on avaldanud oma tulevase Galaxy S23 jaoks teaser'i, paljastades põnevaid uusi funktsioone, nagu ekraani all olev kaamera ja parem aku kestvus. Tööstuseinspektorid ootavad, et seade konkureeriks otse Apple'i uusima iPhone'iga.",
+          "img": "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Ftc3VuZyUyMGdhbGF4eSUyMHMyM3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "557",
+          "title": "Google Pixel 7 tutvustab revolutsioonilisi AI-funktsioone",
+          "description": "Google'i uusim nutitelefon, Pixel 7, on valmis turule tulema täiustatud AI-funktsioonidega, mis lubavad oluliselt parandada kasutajakogemust. Kasutajad võivad oodata paremat hääletuvastust, reaalajas tõlkimist ja nutikamat pilditöötlust.",
+          "img": "https://images.unsplash.com/photo-1596742578443-7682ef5251cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z29vZ2xlJTIwcGl4ZWwlMjA3fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "558",
+          "title": "OnePlus 10: taskukohane nutitelefon, mida jälgida",
+          "description": "Peagi ilmuv OnePlus 10 tekitab kõmu oma muljetavaldavate tehniliste näitajate ja konkurentsivõimelise hinnaga. 120 Hz ekraani ja võimsa Snapdragoni protsessori omadustega on OnePlus 10 valmis väljakutseks kõrgema hinnaklassi lipulaevadele.",
+          "img": "https://images.unsplash.com/photo-1658321466969-1c45400bb947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b25lcGx1cyUyMDl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "559",
+          "title": "Sony Xperia 6: muljetavaldavad kaameravõimalused",
+          "description": "Sony tulevase Xperia 6 nutitelefoni kohta liiguvad kuulujutud, et selles on kasutusel murranguline kaamerasüsteem, mis tugineb ettevõtte oskustele pildindustehnoloogias. Seadme puhul oodatakse erakordset madala valgusega tööd ja kõrglahutusega fotograafiat.",
+          "img": "https://images.unsplash.com/photo-1657732214333-697a115ba263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29ueSUyMHhwZXJpYXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "561",
+          "title": "LG annab vihjeid nutitelefonide turule naasmisest",
+          "description": "Pärast lühikest pausi vihjab LG võimalikule naasmisele nutitelefonide tööstusse, arendades uut seadet. Inspektorid spekuleerivad, et ettevõte võib töötada välja volditava telefoni, et konkureerida Samsungi Galaxy Z seeriaga.",
+          "img": "https://images.unsplash.com/photo-1524856076870-0d765c831d68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8TEclMjBwaG9uZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "562",
+          "title": "Motorola Razr 3: klassikaline klapptelefon saab modernse ilme",
+          "description": "Motorola on valmis välja andma Razr 3, mis on ikoonilise klapptelefoni moderniseeritud versioon. Uus mudel säilitab oma klassikalise vormifaktori, samal ajal lisades volditava OLED-ekraani, 5G ühenduvuse ja võimsa Snapdragoni kiibi.",
+          "img": "https://images.unsplash.com/photo-1572069438926-cb9e0a5806d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8TW90b3JvbGF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "563",
+          "title": "Xiaomi Mi 12: võimas nutitelefon konkurentsivõimelise hinnaga",
+          "description": "Hiina tootja Xiaomi valmistub turule tooma oma Mi 12 nutitelefoni, mis pakub lipulaevale sarnaseid tehnilisi näitajaid keskmise hinnaklassi juures. Seade varustatakse 120 Hz ekraani, võimsa Snapdragoni kiibi ja muljetavaldava kaamerasüsteemiga.",
+          "img": "https://images.unsplash.com/photo-1586790584169-41fda9df2be8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8eGlhb21pJTIwbWl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "id": "564",
+          "title": "Nokia esitleb oma esimest volditavat nutitelefoni",
+          "description": "Nokia on avalikustanud oma esimese volditava nutitelefoni, liitudes Samsungi, Motorola ja teiste tootjatega. Seade paistab silma stiilse disaini, vastupidava ehituskvaliteedi ja tipptasemel tehnoloogiaga, näidates Nokia pühendumust innovatsioonile.",
+          "img": "https://images.unsplash.com/photo-1634042148057-32603ec95d95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBob25lJTIwZmxpcHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        }
+      ]
+    },
     "all_products": [
       {
         "img": "https://i.ibb.co/Mc2YD48/samsung-top-a53.png",

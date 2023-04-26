@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { Box, Paper, Typography, Grid } from '@mui/material';
 import TopTitle from './TopTitle';
 import { useTranslation } from '../../../translate';
+import { Link } from 'react-router-dom';
 
 const NewsBlog = () => {
 
@@ -12,7 +13,9 @@ const NewsBlog = () => {
 
     return (
         <Box sx={{ mt: '60px' }}>
-            <TopTitle name={t.main.section_titles.news_and_blog} />
+            <Link to='/news'>
+                <TopTitle name={t.main.section_titles.news_and_blog} />
+            </Link>
             <Grid sx={{ flexGrow: 1, mt: '50px' }} container>
                 <Grid item xs={12}>
                     <Grid
@@ -21,7 +24,7 @@ const NewsBlog = () => {
                         spacing={{ xl: 10, sm: 5, xs: 2 }}
                     >
                         {products?.length ? (
-                            products[0].news.slice(0, 4).map((item) => (
+                            products[0].news.en.slice(0, 4).map((item) => (
                                 <Grid key={item.id} item>
                                     <Paper
                                         sx={{

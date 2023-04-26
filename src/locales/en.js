@@ -50,7 +50,10 @@ const en = {
                 },
             },
             no_products: 'No suitable products',
-        }
+        },
+        news: {
+            header: 'Latest News'
+        },
     },
 };
 

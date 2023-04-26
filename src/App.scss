@@ -101,11 +101,15 @@ footer {
 }
 
 .MuiTabs-indicator {
-    background-color: #ffa500 !important;
+    display: none;
 }
 
 .MuiSlider-markLabel {
     font-size: 10px !important;
+}
+
+.css-1vw5i9y-MuiButtonBase-root-MuiTab-root {
+    opacity: 1 !important;
 }
 
 .MuiFormControlLabel-label {
