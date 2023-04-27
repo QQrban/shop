@@ -24,7 +24,7 @@ const NewsBlog = () => {
                         spacing={{ xl: 10, sm: 5, xs: 2 }}
                     >
                         {products?.length ? (
-                            products[0].news.en.slice(0, 4).map((item) => (
+                            products[0].news[language].slice(0, 4).map((item) => (
                                 <Grid key={item.id} item>
                                     <Paper
                                         sx={{

@@ -8,8 +8,6 @@ function SecondaryNews() {
     const news = useSelector(state => state.products.news);
     const language = useSelector((state) => state.products.language);
 
-    console.log(news);
-
     if (!language) return;
     if (!news) return;
 

@@ -53,6 +53,28 @@ const ee = {
         },
         news: {
             header: 'Värsked Uudised'
+        },
+        cart: {
+            title: 'Kassasse minek',
+            empty_cart: 'Teie ostukorv on tühi',
+            button: 'Jätka maksmisega',
+            total_price: 'Koguhind',
+            clear_cart: ' Tühjenda ostukorv'
+        },
+        services: {
+            banner: {
+                title: 'Hoolitse oma rahakoti ja keskkonna eest',
+                big_text: 'Vahetus lisatasuga',
+                text: '- Saad uue seadme odavamalt vana seadme maksumuse võrra'
+            },
+            steps: 'Millised sammud on vajalikud lisamaksega vahetusprogrammi jaoks?',
+            list: [
+                'Tooge oma seade esindusse.',
+                'Kui soovite andmeid vanast seadmest uuele üle kanda, looge varukoopia või salvestage andmed muul viisil',
+                'Tagastataval seadmel ei tohi olla lukku ega võrgulukku.',
+                'Seadmest peab olema välja lülitatud Find My iPhone / Find My Device funktsioon.',
+                'Veenduge, et olete seadmest kõik isiklikud kontod ja andmed eemaldanud.',
+            ]
         }
     },
 }

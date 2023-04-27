@@ -21,6 +21,7 @@ import {
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import { useTranslation } from '../../../translate';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -39,10 +40,17 @@ const styleIcon = {
 };
 
 const Cart = () => {
+
     const dispatch = useDispatch();
+
     const openCart = useSelector((state) => state.products.openCart);
+
     const totalPrice = useSelector((state) => state.cart.totalPrice);
+
     const cart = useSelector((state) => state.cart.cart);
+
+    const language = useSelector((state) => state.products.language);
+    const t = useTranslation(language);
 
     useEffect(() => {
         dispatch(calculateTotals(cart));
@@ -70,11 +78,11 @@ const Cart = () => {
                                 fontWeight: 600,
                             }}
                         >
-                            Checkout
+                            {t.main.cart.title}
                         </Typography>
                         <Box sx={{ textAlign: 'right' }}>
                             <Typography component="div" variant="h4">
-                                Total Price:{' '}
+                                {t.main.cart.total_price}:{' '}
                                 <span style={{ color: 'orange', fontWeight: '500' }}>
                                     ${totalPrice}
                                 </span>
@@ -91,7 +99,7 @@ const Cart = () => {
                                     sx={{ ':hover': { bgcolor: 'orange' } }}
                                     variant="contained"
                                 >
-                                    Proceed to Payment
+                                    {t.main.cart.button}
                                 </Button>
                             ) : null}
                         </Box>
@@ -100,7 +108,7 @@ const Cart = () => {
                                 onClick={() => dispatch(clearItems())}
                                 sx={{ color: 'orange' }}
                             >
-                                clear cart
+                                {t.main.cart.clear_cart}
                             </Button>
                         ) : null}
                         <Grid container sx={{ gap: 4, mt: 5 }}>
@@ -201,7 +209,7 @@ const Cart = () => {
                                         color: 'orange',
                                     }}
                                 >
-                                    Your cart is empty!
+                                    {t.main.cart.empty_cart}
                                 </Typography>
                             )}
                         </Grid>

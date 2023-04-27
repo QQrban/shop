@@ -10,6 +10,7 @@ import ProductsPage from './pages/ProductsPage';
 import NewsPage from './pages/NewsPage';
 import { getAllProducts } from './services/apiService';
 import { setProducts } from './services/stateService';
+import ServicesPage from './pages/ServicesPage';
 
 function App() {
     const dispatch = useDispatch();
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/products" element={<ProductsPage />} />
                 <Route path="/news" element={<NewsPage />} />
+                <Route path="/services" element={<ServicesPage />} />
             </Routes>
             <Cart />
             <Footer />

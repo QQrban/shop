@@ -54,6 +54,29 @@ const en = {
         news: {
             header: 'Latest News'
         },
+        cart: {
+            title: 'Checkout',
+            empty_cart: 'Your cart is empty',
+            button: 'Proceed to payment',
+            total_price: 'Total price',
+            clear_cart: 'Clear cart',
+        },
+        services: {
+            banner: {
+                title: 'Take care of your wallet and the environment',
+                big_text: 'Trade-in with extra payment',
+                text: '- You will get a new device cheaper by the amount of the cost of the old device'
+            },
+            steps: 'What steps are required for the trade-in service with additional payment?',
+            list: [
+                'Bring your device to the nearest store.',
+                'If you want to transfer data from your old device to a new one, create a backup or save the data in another way.',
+                'The returned device must not have any lock or network lock.',
+                'The Find My iPhone / Find My Device feature must be turned off on the device.',
+                'Make sure you have removed all personal accounts and data from the device.',
+            ]
+
+        }
     },
 };
 

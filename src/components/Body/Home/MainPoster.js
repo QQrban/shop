@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -10,6 +11,8 @@ const MainPoster = () => {
 
     const language = useSelector((state) => state.products.language);
     const t = useTranslation(language);
+
+    const navigate = useNavigate();
 
     return (
         <Box
@@ -64,6 +67,7 @@ const MainPoster = () => {
                     </Typography>
                     <Button
                         className="shop-now"
+                        onClick={() => navigate('/products')}
                         sx={{
                             maxWidth: '150px',
                             bgcolor: '#1976d2',

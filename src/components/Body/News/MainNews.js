@@ -23,20 +23,23 @@ const MainNews = () => {
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'center',
+                justifyContent: 'space-between',
                 gap: { xs: 1, sm: 1, md: 3 },
             }}>
                 <Typography
                     variant='h5'
                     component='h6'
-                    sx={{ fontSize: 24, fontWeight: 600, color: 'darkblue' }}
+                    sx={{
+                        fontSize: 28,
+                        fontWeight: 600,
+                        color: 'darkblue'
+                    }}
                 >
                     {news[language][0].title}
                 </Typography>
                 <Typography
                     sx={{
                         mt: 2,
-                        lineHeight: 1.6
                     }}
                     component='p'
                 >
